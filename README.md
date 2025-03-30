@@ -183,6 +183,21 @@ Automata/
 ├── .gitignore
 └── README.md
 ```
+---
+
+## 🔁 Pipeline Flowchart
+
+```mermaid
+graph TD
+    A[Start: run_all.py] --> B[0copy_appdata.py<br>📁 Copy .appdata folder]
+    B --> C[1generate_md.py<br>📝 Generate summary.md]
+    C --> D[2decode.py<br>🔓 Decode Base64 to JSON]
+    D --> E[3xlsx.py<br>📊 Create Excel from JSON]
+    E --> F[4append_consolidated.py<br>🧩 Consolidate data]
+    F --> G[5import_db.py<br>🗄 Import to PostgreSQL]
+    G --> H[6prisma_sync.py<br>🚀 Sync + Launch Prisma Studio]
+    H --> Z[End]
+```
 
 ---
 
