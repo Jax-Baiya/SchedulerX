@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# Logs
+*.log
+./logs/session.json
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+
+# Data artifacts
+assets/.appdata/
+assets/decoded_sections/
+assets/xlsx_files/
+assets/summary.md
+data.xlsx
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
