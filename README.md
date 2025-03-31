@@ -104,5 +104,6 @@ See [ROADMAP.md](./ROADMAP.md) for upcoming features like:
 - Post scheduling to TikTok, Pinterest, and IG
 
 ---
+· MIT License
 
-Built by [Jax-Baiya](https://github.com/Jax-Baiya) · MIT License
+Built by [Jax-Baiya](https://github.com/Jax-Baiya) 
