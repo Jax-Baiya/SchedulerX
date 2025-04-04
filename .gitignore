@@ -1,4 +1,6 @@
 # Python
+SchedulerX/backend/__pycache__
+SchedulerX/backend/utils/__pycache__
 __pycache__/
 *.pyc
 *.pyo
