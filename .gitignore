@@ -12,10 +12,10 @@ __pycache__/
 ./logs/session.json
 
 # Environments
-.env
-.venv/
-env/
-venv/
+# .env
+# .venv/
+# env/
+# venv/
 
 # Data artifacts
 assets/.appdata/

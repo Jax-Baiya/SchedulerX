@@ -1,54 +1,42 @@
-# 🛣️ Project Roadmap: Social Media Automation System
+# 🛣️ SchedulerX Project Roadmap
 
-## ✅ Completed: Phase 1 — Automated TikTok Data Pipeline
+## ✅ Phase 1 — Automated TikTok Data Pipeline
 
-- [x] Modular Python scripts for ingesting and transforming TikTok metadata
-- [x] PostgreSQL + Prisma schema creation
-- [x] Dynamic session handling + .env generation
-- [x] Prisma Studio + log management
-- [x] GitHub-ready documentation + flowchart
-- [x] Ready for executable packaging (.exe, .sh)
-
----
-
-## 🔜 Phase 2 — UI + Cloud Uplink Integration
-
-### 🎯 Objective
-Build a full-stack dashboard that connects your local PostgreSQL DB to cloud media, enabling automated post scheduling.
+- Modular Python scripts for ingesting and transforming TikTok metadata
+- PostgreSQL + Prisma schema creation
+- Dynamic session handling + .env generation
+- Prisma Studio + log management
+- GitHub-ready documentation + flowchart
+- Ready for executable packaging (.exe, .sh)
 
 ---
 
-### 🧩 Key Modules
+## 🚀 Phase 2 — API & UI Integration
 
-| Module             | Stack                             | Status |
-|--------------------|------------------------------------|--------|
-| **Frontend UI**     | Next.js + Tailwind + ShadCN        | ⏳ Planned |
-| **Backend API**     | Flask + APScheduler                | ⏳ Planned |
-| **Cloud Storage**   | Cloudflare R2 (via boto3 or r2wrapper) | ⏳ Planned |
-| **Task Scheduler**  | APScheduler / Supabase CRON        | ⏳ Planned |
-| **API Clients**     | Python SDKs (Pinterest, TikTok...) | ⏳ Planned |
-| **Media Uploader**  | File upload → R2 + DB metadata link | ⏳ Planned |
-| **User Auth**       | Supabase Auth / JWT                | ⏳ Optional |
-| **Dashboard UI**    | View, edit, schedule, monitor posts| ⏳ Planned |
+- FastAPI backend with modular routes and JWT Auth
+- Next.js frontend with Tailwind, ShadCN UI, and API integration
+- Cloudflare R2 storage integration
+- APScheduler for scheduled tasks
+- Full CRUD for media, scheduler, tasks, and settings
+- Admin/monitoring endpoints and UI
 
 ---
 
 ## 🧭 Long-Term Goals
 
-- 🔁 End-to-end post automation (TikTok, Pinterest, IG)
-- ☁️ Auto-sync local media with R2 cloud storage
-- 💬 Smart prompts for captions, hashtags, trends
-- 🧠 Analytics feedback loop per platform
+- End-to-end post automation (TikTok, Pinterest, IG)
+- Auto-sync local media with R2 cloud storage
+- Smart prompts for captions, hashtags, trends
+- Analytics feedback loop per platform
 
 ---
 
-## 🧰 Suggested Milestones
+## 📚 Related Docs
 
-- [ ] `cloudlinker.py` → Upload media to R2 + update DB
-- [ ] `scheduler.py` → Pull from DB and auto-post
-- [ ] Frontend MVP (Next.js + Supabase UI for DB)
-- [ ] Cloudflare R2 API wrapper & auth system
-- [ ] `tasks.db` + UI to control automation workflows
+- [Main README](./README.md)
+- [Backend API Docs](../backend/api/README.md)
+- [Pipeline v2 Docs](../backend/pipeline_v2/docs/README.md)
+- [Frontend UI Docs](../frontend/README.md)
 
 ---
 
