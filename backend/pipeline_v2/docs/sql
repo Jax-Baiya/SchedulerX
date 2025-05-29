@@ -1,0 +1,77 @@
+-- 1. Table Structure
+SELECT 
+    column_name,
+    data_type,
+    character_maximum_length,
+    is_nullable
+FROM information_schema.columns 
+WHERE table_name = 'media';
+
+-- 2. Basic Statistics
+SELECT 
+    COUNT(*) as total_records,
+    COUNT(DISTINCT author_id) as unique_authors,
+    COUNT(DISTINCT video_id) as unique_videos
+FROM media;
+
+-- 3. Check for NULL values
+SELECT 
+    COUNT(*) - COUNT(author_id) as null_author_ids,
+    COUNT(*) - COUNT(video_id) as null_video_ids,
+    COUNT(*) - COUNT(video_path) as null_video_paths,
+    COUNT(*) - COUNT(cover_path) as null_cover_paths,
+    COUNT(*) - COUNT(title) as null_titles,
+    COUNT(*) - COUNT(description) as null_descriptions,
+    COUNT(*) - COUNT(tags) as null_tags
+FROM media;
+
+-- 4. Sample Records
+SELECT * FROM media LIMIT 5;
+
+-- 5. Videos per Author
+SELECT 
+    author_id,
+    COUNT(*) as video_count
+FROM media
+GROUP BY author_id
+ORDER BY video_count DESC
+LIMIT 10;
+
+-- 6. Path Analysis
+SELECT 
+    SUBSTRING(video_path FROM '.*?/([^/]+)/videos/') as folder_structure,
+    COUNT(*) as count
+FROM media
+GROUP BY folder_structure;
+
+-- 7. Description Length Statistics
+SELECT 
+    MIN(LENGTH(description)) as min_desc_length,
+    AVG(LENGTH(description)) as avg_desc_length,
+    MAX(LENGTH(description)) as max_desc_length
+FROM media;
+
+-- 8. Empty Fields Check
+SELECT 
+    COUNT(*) FILTER (WHERE title = '') as empty_titles,
+    COUNT(*) FILTER (WHERE description = '') as empty_descriptions,
+    COUNT(*) FILTER (WHERE tags = '') as empty_tags
+FROM media;
+
+-- 9. File Extension Verification
+SELECT 
+    RIGHT(video_path, 4) as video_extension,
+    RIGHT(cover_path, 4) as cover_extension,
+    COUNT(*) as count
+FROM media
+GROUP BY video_extension, cover_extension;
+
+-- 10. Path Existence Pattern
+SELECT 
+    CASE 
+        WHEN video_path LIKE '%mp4' AND cover_path LIKE '%jpg' THEN 'Valid Pattern'
+        ELSE 'Invalid Pattern'
+    END as path_pattern,
+    COUNT(*) as count
+FROM media
+GROUP BY path_pattern;

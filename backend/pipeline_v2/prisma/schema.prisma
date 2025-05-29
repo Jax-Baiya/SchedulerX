@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model alembic_version {
+  version_num String @id(map: "alembic_version_pkc") @db.VarChar(32)
+}
+
+model authors {
+  authors_id             String   @id @db.VarChar
+  authors_uniqueids      String?  @db.VarChar
+  authors_nicknames      String?  @db.VarChar
+  authors_followercount  String?  @db.VarChar
+  authors_heartcount     String?  @db.VarChar
+  authors_videocount     String?  @db.VarChar
+  authors_signature      String?  @db.VarChar
+  authors_privateaccount Boolean?
+}
+
+model bookmarks {
+  bookmarks_officiallist   String  @id @db.VarChar
+  bookmarks_downloaded     String? @db.VarChar
+  bookmarks_total          String? @db.VarChar
+  bookmarks_numdisappeared String? @db.VarChar
+  bookmarks_lastrun        String? @db.VarChar
+}
+
+model consolidated {
+  c_videos_id          String  @id @db.VarChar
+  c_videos_authorid    String? @db.VarChar
+  c_videos_audioid     String? @db.VarChar
+  c_authors_id         String? @db.VarChar
+  c_authors_nicknames  String? @db.VarChar
+  c_authors_uniqueids  String? @db.VarChar
+  c_texts_text_content String? @db.VarChar
+}
+
+model following {
+  following_author_id           String   @id @db.VarChar
+  following_official            Boolean?
+  following_started             Boolean?
+  following_not_interested      Boolean?
+  following_infolder            String?  @db.VarChar
+  following_disappeared         String?  @db.VarChar
+  following_last_run_start      String?  @db.VarChar
+  following_last_run_finish     String?  @db.VarChar
+  following_last_run_bottom     String?  @db.VarChar
+  following_last_run_firstadded String?  @db.VarChar
+}
+
+model likes {
+  likes_schemaversion String? @db.VarChar
+  likes_user          String  @id @db.VarChar
+  likes_likes         String? @db.VarChar
+}
+
+model media {
+  video_id      String          @id @db.VarChar
+  author_id     String?         @db.VarChar
+  video_path    String?         @db.VarChar
+  cover_path    String?         @db.VarChar
+  title         String?         @db.VarChar
+  description   String?         @db.VarChar
+  tags          String?         @db.VarChar
+  upload_status upload_status[]
+}
+
+model texts {
+  texts_text_id      String  @id @db.VarChar
+  texts_text_content String? @db.VarChar
+}
+
+model upload_status {
+  id               Int       @id @default(autoincrement())
+  video_id         String?   @db.VarChar
+  status           String?   @db.VarChar
+  upload_timestamp DateTime? @db.Timestamp(6)
+  r2_video_url     String?
+  r2_cover_url     String?
+  retry_count      Int?
+  last_error       String?
+  media            media?    @relation(fields: [video_id], references: [video_id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model videos {
+  videos_id         String  @id @db.VarChar
+  videos_authorid   String? @db.VarChar
+  videos_createtime String? @db.VarChar
+  videos_diggcount  String? @db.VarChar
+  videos_playcount  String? @db.VarChar
+  videos_audioid    String? @db.VarChar
+  videos_size       String? @db.VarChar
+  videos_itemmute   String? @db.VarChar
+}
+
+enum mediatype {
+  VIDEO
+  IMAGE
+}

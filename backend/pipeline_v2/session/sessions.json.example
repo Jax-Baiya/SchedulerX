@@ -1,0 +1,13 @@
+{
+    "src_root": "/path/to/tiktok/data/directory",
+    "dst_root": "assets",
+    "input_file_path": "${dst_root}/summary.md",
+    "decoded_directory": "${dst_root}/decoded_sections",
+    "xlsx_file": "${dst_root}/xlsx_files/data.xlsx",
+    "DB_USER": "your_database_username",
+    "DB_PASSWORD": "your_database_password",
+    "DB_HOST": "your.database.host",
+    "PROJECT_REF": "your_supabase_project_ref",
+    "POOLER_TYPE": "transaction | session",
+    "DB_SCHEMA": "public | your_schema_name"
+}

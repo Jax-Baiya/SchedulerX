@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 7,
+    "user": {
+        "uid": "3GfNyDskFb3",
+        "id": "7397572905804235782",
+        "uniqueId": "yu.zhou_",
+        "nickname": "Yu Zhou"
+    },
+    "likes": {
+        "downloadStatus": "unset",
+        "officialList": [],
+        "downloaded": [],
+        "total": 0,
+        "numDisappeared": 0,
+        "lastRun": {
+            "start": 0,
+            "finish": 0
+        }
+    }
+}

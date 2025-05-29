@@ -1,0 +1,3 @@
+These "db" files contain the info displayed by your Archive.
+
+Read https://myfavett.com/about_db for more details.

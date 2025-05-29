@@ -1,0 +1,16 @@
+This folder contains backups of all the .js files in ".appdata" (the parent folder of this).
+
+Archive.html works completely offline, what it displays depends on those .js files.
+
+Since those .js files are very important, historic backups are stored here. By using a backup, your Archive can be restored to a previous day. This is rarely needed, but just in case.
+
+To use a backup:
+1. move all the .js files in ".appdata" to another temporary place, in case you need them back.
+2. open a backup folder, copy all .js files into ".appdata".
+3. reload Archive.html
+
+Note:
+1. Auto backup happens when you use the browser extension ("myfaveTT"), no more often than once a day. Only the recent 10 backups are kept, older ones are deleted.
+2. These .js files determine what MP4s Archive.html THINKS you have, but don't affect what MP4s you ACTUALLY have.
+3. The browser extension also uses these .js files to know what have already been downloaded, so if you perform a restore, then run the extension, some mp4 files may be re-downloaded even though you already have them (but that's fine).
+4. There's also a "fact.json" file, it's a simple export of all data for archival purpose. Each backup has a copy of it, but Archive.html doesn't need it.

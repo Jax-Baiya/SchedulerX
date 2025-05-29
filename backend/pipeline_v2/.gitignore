@@ -1,0 +1,34 @@
+node_modules
+# Keep environment variables out of version control
+# */.env
+
+# Archives
+*/archives/*
+
+# Logs
+*/logs/*
+*.log
+*.log.*
+*.log.*.*
+*.log.*.*.*
+
+# Pycache
+*/__pycache__
+*/__pycache__/*
+
+# Session
+*/session/*  
+*/session.json
+
+# Node modules
+node_modules/
+
+# Python
+*.pyc
+*.pyc.*
+*.pyc.*.*
+*.pyc.*.*.*
+*.pyc.*.*.*.*
+*.pyc.*.*.*.*.*
+*.pyc.*.*.*.*.*.*   
+
