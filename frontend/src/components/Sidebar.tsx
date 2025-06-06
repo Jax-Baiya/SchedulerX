@@ -1,46 +1,67 @@
 "use client";
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
+import { usePathname } from "next/navigation";
 import SettingsDrawer from "./SettingsDrawer";
 
-function NavItem({ icon, label, href, active, onClick }: { icon: string; label: string; href: string; active?: boolean; onClick?: () => void }) {
-  return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className={`flex items-center gap-3 px-3 py-2 rounded transition-colors font-medium text-white hover:bg-gray-800 ${active ? "bg-gray-800" : ""}`}
-    >
-      <span className="text-lg">{icon}</span>
-      <span>{label}</span>
-    </Link>
-  );
+interface SidebarProps {
+  activePath: string;
+  isAdmin?: boolean;
+  onLogout: () => void;
+  closeDrawer?: () => void;
 }
 
-export default function Sidebar({ activePath, isAdmin, onLogout, closeDrawer }: { activePath: string; isAdmin: boolean; onLogout: () => void; closeDrawer?: () => void }) {
+const navLinks = [
+  { href: "/dashboard", label: "Dashboard", icon: "🏠" },
+  { href: "/analytics", label: "Analytics", icon: "📊" },
+  { href: "/media", label: "Media", icon: "🖼️" },
+  { href: "/settings", label: "Settings", icon: "⚙️" },
+];
+
+export default function Sidebar({ activePath, isAdmin, onLogout, closeDrawer }: SidebarProps) {
   return (
-    <div className="flex flex-col h-full w-full min-w-[220px] bg-gray-900 p-4">
+    <nav className="flex flex-col h-full w-64 bg-gray-900 text-white p-4 border-r border-gray-800">
       <div className="mb-8 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-white tracking-tight mb-2">SchedulerX</h1>
-        <ThemeToggle />
+        <span className="text-2xl font-bold tracking-tight">SchedulerX</span>
+        {closeDrawer && (
+          <button
+            onClick={closeDrawer}
+            className="md:hidden p-2 rounded hover:bg-gray-800"
+            aria-label="Close sidebar"
+          >
+            ✕
+          </button>
+        )}
       </div>
-      <nav className="flex flex-col gap-1 flex-1">
-        <NavItem icon="📂" label="Media" href="/media" active={activePath.startsWith("/media")} onClick={closeDrawer} />
-        <NavItem icon="🗓️" label="Scheduler" href="/scheduler" active={activePath.startsWith("/scheduler")} onClick={closeDrawer} />
-        <NavItem icon="⚙️" label="Pipeline" href="/pipeline" active={activePath.startsWith("/pipeline")} onClick={closeDrawer} />
-        <NavItem icon="📊" label="Logs" href="/analytics" active={activePath.startsWith("/analytics")} onClick={closeDrawer} />
-        <hr className="my-3 border-gray-700" />
-        <NavItem icon="👤" label="Account" href="/account" active={activePath.startsWith("/account")} onClick={closeDrawer} />
-        {isAdmin && <NavItem icon="🧪" label="Dev Tools" href="/tools" active={activePath.startsWith("/tools")} onClick={closeDrawer} />}
-        <hr className="my-3 border-gray-700" />
+      <ul className="flex-1 space-y-2">
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className={`flex items-center gap-3 px-3 py-2 rounded transition-colors ${
+                activePath.startsWith(link.href)
+                  ? "bg-gray-800 text-white"
+                  : "text-gray-300 hover:bg-gray-800 hover:text-white"
+              }`}
+              onClick={closeDrawer}
+            >
+              <span>{link.icon}</span>
+              <span>{link.label}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-8 flex flex-col gap-2">
+        <SettingsDrawer triggerClass="w-full" />
         <button
-          onClick={() => { onLogout(); if (closeDrawer) closeDrawer(); }}
-          className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-800 transition-colors text-white font-medium"
+          onClick={() => {
+            if (closeDrawer) closeDrawer();
+            onLogout();
+          }}
+          className="w-full px-3 py-2 rounded bg-red-600 hover:bg-red-700 text-white font-semibold transition-colors"
         >
-          <span className="text-lg">🚪</span>
-          <span>Logout</span>
+          Logout
         </button>
-        <SettingsDrawer triggerClass="mt-2" />
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
