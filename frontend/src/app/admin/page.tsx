@@ -28,11 +28,18 @@ export default function AdminPage() {
     setTriggering(true);
     setPipelineError(null);
     try {
-      await triggerPipeline({}); // Add config if needed
-      await fetchPipelineStatus();
+      // Send a valid PipelineConfig (all stages, step mode)
+      const config = {
+        stages: [0, 1, 2, 3, 4, 5, 6],
+        run_mode: "step",
+        output_directory: "assets",
+        options: {},
+      };
+      const result = await triggerPipeline(config);
+      setPipelineStatus(result as Record<string, unknown>);
       toast({ title: "Pipeline run started", description: "The pipeline was triggered successfully." });
     } catch (e) {
-      const msg = e instanceof Error ? e.message : String(e);
+      const msg = e instanceof Error ? e.message : JSON.stringify(e);
       setPipelineError(msg);
       toast({ title: "Pipeline run failed", description: msg, variant: "destructive" });
     } finally {

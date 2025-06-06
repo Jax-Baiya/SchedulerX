@@ -9,7 +9,7 @@ export default function DashboardShell({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
+  const pathname = usePathname() || "/";
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
