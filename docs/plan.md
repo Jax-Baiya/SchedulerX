@@ -9,7 +9,7 @@ This document outlines the actionable, step-by-step plan for building SchedulerX
 
 ## 2. API Bootstrapping
 - Launch FastAPI server with modular routers
-- Configure CORS, middleware, and JWT Auth
+- Configure CORS, middleware, and Supabase JWT Auth (no custom login/register endpoints)
 
 ## 3. Database Integration
 - Use SQLAlchemy/Prisma for DB access
@@ -28,7 +28,7 @@ This document outlines the actionable, step-by-step plan for building SchedulerX
 
 ## 7. Frontend Integration
 - Next.js UI for dashboard, media, scheduler, tasks, settings
-- Connect to backend API with JWT Auth
+- Connect to backend API with Supabase Auth (JWT)
 
 ---
 

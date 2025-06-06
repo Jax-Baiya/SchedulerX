@@ -8,10 +8,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model alembic_version {
-  version_num String @id(map: "alembic_version_pkc") @db.VarChar(32)
-}
-
 model authors {
   authors_id             String   @id @db.VarChar
   authors_uniqueids      String?  @db.VarChar

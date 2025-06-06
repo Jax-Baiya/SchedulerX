@@ -23,6 +23,7 @@ Here’s a rapid, systematic summary of what’s left to do and what’s “done
   - Health checks, alerting, logging (audit/security/performance) are not checked
 - **Security Layer**
   - All items (auth, roles, rate limiting, etc.) are unchecked
+  - Auth is now handled by Supabase Auth (frontend) and backend validates Supabase JWTs only
 
 ---
 

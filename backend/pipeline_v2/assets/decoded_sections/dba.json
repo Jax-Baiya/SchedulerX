@@ -1,55 +1,544 @@
 {
-    "6931652124842640390": {
+    "4655522": {
         "uniqueIds": [
-            "soul.candles.studio"
+            "paigetailyn"
         ],
         "nicknames": [
-            "Soul Candles Studio",
-            "\u210e\ud835\udc4e\ud835\udc5b\ud835\udc51\ud835\udc5a\ud835\udc4e\ud835\udc51\ud835\udc52 \ud835\udc50\ud835\udc4e\ud835\udc5b\ud835\udc51\ud835\udc59\ud835\udc52\ud835\udc60"
+            "Paige Tailyn"
         ],
-        "followerCount": 198300,
+        "followerCount": 938400,
+        "heartCount": 15500000,
+        "videoCount": 603,
+        "signature": "ATL\nTending to our Garden\nIG: Blossomeffect_\n\u2709\ufe0fTeampaige@pearpoptalent.com",
+        "privateAccount": false
+    },
+    "6754907447581770758": {
+        "uniqueIds": [
+            "emeraldjadem",
+            "mattinglyjade"
+        ],
+        "nicknames": [
+            "j \u2764\ufe0e",
+            "Jade"
+        ],
+        "followerCount": 29200,
+        "heartCount": 1400000,
+        "videoCount": 438,
+        "signature": "sharing all my fav finds \ud83e\udd0d\u2601\ufe0f\n\nshop \ud83d\udd17 or showcase \n\n\ud83d\udce7 emeraldjadem27@gmail.com",
+        "privateAccount": false
+    },
+    "6772326923131028485": {
+        "uniqueIds": [
+            "bubble_crunch"
+        ],
+        "nicknames": [
+            "Njenga"
+        ],
+        "followerCount": 250,
+        "heartCount": 686,
+        "videoCount": 20,
+        "signature": "",
+        "privateAccount": true
+    },
+    "6803157416059880453": {
+        "uniqueIds": [
+            "oreebby"
+        ],
+        "nicknames": [
+            "O\ua564"
+        ],
+        "followerCount": 19000,
+        "heartCount": 908300,
+        "videoCount": 431,
+        "signature": "Oreoluwa\n\ud83d\udc8cc.idowu910@gmail.com\nIG: orexbby\n\ud83d\udccdCanada",
+        "privateAccount": false
+    },
+    "7049774509490209797": {
+        "uniqueIds": [
+            "kaylagresh"
+        ],
+        "nicknames": [
+            "kayla gresh"
+        ],
+        "followerCount": 1500000,
+        "heartCount": 67600000,
+        "videoCount": 968,
+        "signature": "home & lifestyle \ud83e\udee7\ud83c\udf52\ud83e\ude77\ud83c\udf38 | \ud83d\udccdTX\n\ud83d\udc8cteamkayla@emeraldwoodsmgmt.com\n\u21e3all links\u21e3",
+        "privateAccount": false
+    },
+    "7198488524826657797": {
+        "uniqueIds": [
+            "asmr.satisfyyng"
+        ],
+        "nicknames": [
+            "Compiled from the best ASMR \ud83e\uddf8"
+        ],
+        "followerCount": 1900000,
+        "heartCount": 48800000,
+        "videoCount": 814,
+        "signature": "compiled of the best ASMR \ud83c\udf80",
+        "privateAccount": false
+    },
+    "7339522849575011371": {
+        "uniqueIds": [
+            "shopaiz",
+            "amzngirl"
+        ],
+        "nicknames": [
+            "\ud835\uddcc\ud835\uddc1\ud835\uddc8\ud835\uddc9\ud835\uddba\ud835\uddc2\ud835\uddd3 \u272e\u22c6\u02d9",
+            "\ud835\ude22\ud835\ude2e\ud835\ude22\ud835\ude3b\ud835\ude30\ud835\ude2f \ud835\ude27\ud835\ude2a\ud835\ude2f\ud835\ude25\ud835\ude34 \u272e\u22c6\u02d9"
+        ],
+        "followerCount": 214300,
+        "heartCount": 6500000,
+        "videoCount": 87,
+        "signature": "im backkkkk \n\ud835\uddbb\ud835\uddbe\ud835\uddcc\ud835\uddcd \ud835\uddbf\ud835\uddc2\ud835\uddc7\ud835\uddbd\ud835\uddcc \ud835\uddba\ud835\uddcb\ud835\uddbe \ud835\uddc2\ud835\uddc7 \ud835\uddcd\ud835\uddc1\ud835\uddc2\ud835\uddcc \ud835\uddc9\ud835\uddba\ud835\uddc0\ud835\uddbe",
+        "privateAccount": false
+    },
+    "6937033316499719174": {
+        "uniqueIds": [
+            "mmu_deen",
+            "home.and.jo"
+        ],
+        "nicknames": [
+            "mmu_deen",
+            "Ummu"
+        ],
+        "followerCount": 1074,
+        "heartCount": 16600,
+        "videoCount": 56,
+        "signature": "All about Lifestyle",
+        "privateAccount": false
+    },
+    "7088376773634081835": {
+        "uniqueIds": [
+            "arizonhome"
+        ],
+        "nicknames": [
+            "jaymee | home + diy"
+        ],
+        "followerCount": 112400,
+        "heartCount": 1500000,
+        "videoCount": 253,
+        "signature": "Home, organization, DIY, & Amazon finds!",
+        "privateAccount": false
+    },
+    "6940246907550745605": {
+        "uniqueIds": [
+            "stephanieevargass"
+        ],
+        "nicknames": [
+            "Stephanie Vargas"
+        ],
+        "followerCount": 4766,
+        "heartCount": 79600,
+        "videoCount": 1343,
+        "signature": "",
+        "privateAccount": false
+    },
+    "7011403552887309318": {
+        "uniqueIds": [
+            "we_built_our_home"
+        ],
+        "nicknames": [
+            "Shan \u2728 Home & Lifestyle"
+        ],
+        "followerCount": 240800,
+        "heartCount": 2400000,
+        "videoCount": 594,
+        "signature": "Interiors, Decor, Cleaning & Lifestyle \n\ud83d\udccdLondon\n\ud83d\udce7shan.webuiltourhome@gmail.com",
+        "privateAccount": false
+    },
+    "7249755253292647451": {
+        "uniqueIds": [
+            "yana.xvi"
+        ],
+        "nicknames": [
+            "Yana\ud83e\udd40"
+        ],
+        "followerCount": 38200,
+        "heartCount": 1800000,
+        "videoCount": 496,
+        "signature": "In my growth and self care era \u2728\nYana.xvi@hotmail.com\n\ud83c\udde8\ud83c\uddfe Living in MCR \ud83c\uddec\ud83c\udde7\ud83d\udccd",
+        "privateAccount": false
+    },
+    "7091786698757473286": {
+        "uniqueIds": [
+            "ascendwisdom"
+        ],
+        "nicknames": [
+            "AscendWisdom"
+        ],
+        "followerCount": 464000,
+        "heartCount": 30800000,
+        "videoCount": 267,
+        "signature": "Motivating You To Be Successful \ud83d\ude80\n\nLearn How To Edit Like This \u2b07\ufe0f",
+        "privateAccount": false
+    },
+    "7320780400610657285": {
+        "uniqueIds": [
+            "myraactive"
+        ],
+        "nicknames": [
+            "MYRA ACTIVE",
+            "Activewear & Athleisure Brand"
+        ],
+        "followerCount": 2672,
+        "heartCount": 37300,
+        "videoCount": 23,
+        "signature": "SEXY. SPORTY. CHIC. \nWe make activewear fashionable.\n\u0e0a\u0e38\u0e14\u0e2d\u0e2d\u0e01\u0e01\u0e33\u0e25\u0e31\u0e07\u0e01\u0e32\u0e22\u0e41\u0e1f\u0e0a\u0e31\u0e48\u0e19 \ud83d\udc93",
+        "privateAccount": false
+    },
+    "7011128146528863237": {
+        "uniqueIds": [
+            "marbieskitchen"
+        ],
+        "nicknames": [
+            "Modern Day Martha Stewart"
+        ],
+        "followerCount": 103900,
+        "heartCount": 1100000,
+        "videoCount": 386,
+        "signature": "Dinner parties, simple recipes, and musings. \n\u2709\ufe0fHello@marbieskitchen.com",
+        "privateAccount": false
+    },
+    "6772148576204637190": {
+        "uniqueIds": [
+            "grillodesigns"
+        ],
+        "nicknames": [
+            "Grillodesigns"
+        ],
+        "followerCount": 218700,
+        "heartCount": 4700000,
+        "videoCount": 289,
+        "signature": "Creative Serial Decorator and DIY-er.\nFollow me on Instagram too!",
+        "privateAccount": false
+    },
+    "7280056981213922350": {
+        "uniqueIds": [
+            "asmrkr"
+        ],
+        "nicknames": [
+            "ASMR Kitchen Restocking"
+        ],
+        "followerCount": 122100,
+        "heartCount": 1900000,
+        "videoCount": 18,
+        "signature": "Follow for more video!!!\nCleaning \u2022 Restocking \u2022 Organizing\n\n\u21e3 My Link \u21e3",
+        "privateAccount": false
+    },
+    "7042619200707527681": {
+        "uniqueIds": [
+            "azen_ash"
+        ],
+        "nicknames": [
+            "azen_ash"
+        ],
+        "followerCount": 3,
+        "heartCount": 17,
+        "videoCount": 32,
+        "signature": "",
+        "privateAccount": true
+    },
+    "6791371023663432709": {
+        "uniqueIds": [
+            "lucyy.jd"
+        ],
+        "nicknames": [
+            "lucyjane",
+            "user8273388272\u00a33"
+        ],
+        "followerCount": 574200,
+        "heartCount": 21700000,
+        "videoCount": 497,
+        "signature": "Luxury beauty, lifestyle & travel \ud83e\udd0d\nIG:lucyy.jd\n\n\u2709\ufe0flucyjd@thebloggeragent.co.uk",
+        "privateAccount": false
+    },
+    "6915932880540517381": {
+        "uniqueIds": [
+            "caitlinaarmstrong_"
+        ],
+        "nicknames": [
+            "Caitlin Armstrong"
+        ],
+        "followerCount": 169600,
+        "heartCount": 5500000,
+        "videoCount": 596,
+        "signature": "Inspire | Motivate | Create\n\ud81a\udc61 australia\nGrow your socials \u2193",
+        "privateAccount": false
+    },
+    "7106794378492756997": {
+        "uniqueIds": [
+            "wellnessmae"
+        ],
+        "nicknames": [
+            "MAELYS | Wellness & selfcare"
+        ],
+        "followerCount": 82000,
+        "heartCount": 2600000,
+        "videoCount": 198,
+        "signature": "motivation \ud83e\udd0d healthy lifestyle  \nIG:wellnessmae(150k)\nwellnessmaelys@gmail.com",
+        "privateAccount": false
+    },
+    "6923875369783559173": {
+        "uniqueIds": [
+            "amelieeknr"
+        ],
+        "nicknames": [
+            "Amelie \ud83e\udd0d"
+        ],
+        "followerCount": 128200,
+        "heartCount": 7400000,
+        "videoCount": 164,
+        "signature": "@DFYNE code: Amelie\n@FITJEANS code: xamelie10\ninsta: ameliee_fitness",
+        "privateAccount": false
+    },
+    "7266156151421764641": {
+        "uniqueIds": [
+            "mornings2success"
+        ],
+        "nicknames": [
+            "MorningRoutinesToSuccess"
+        ],
+        "followerCount": 33300,
+        "heartCount": 477000,
+        "videoCount": 853,
+        "signature": "Morning Routines That Make \u2728YOU\u2728 Become Successful\u2728 Check out my ebook on\u27a1\ufe0f",
+        "privateAccount": false
+    },
+    "7042836439976936450": {
+        "uniqueIds": [
+            "allurevista"
+        ],
+        "nicknames": [
+            "AllureVista | Amazon Finds"
+        ],
+        "followerCount": 1030,
+        "heartCount": 1719,
+        "videoCount": 100,
+        "signature": "Follow for more @allurevista and click the link \ud83d\udc47 to purchase your favorites!",
+        "privateAccount": false
+    },
+    "7096346849951679493": {
+        "uniqueIds": [
+            "zarinalifestyle"
+        ],
+        "nicknames": [
+            "zarina brown"
+        ],
+        "followerCount": 193500,
+        "heartCount": 4200000,
+        "videoCount": 455,
+        "signature": "wellness girl era \ud83c\udfa7\ud83e\udd0d\nmorning routine \u2022 wellness \u2022 self care\nig: zarinabrown",
+        "privateAccount": false
+    },
+    "7143676761942344710": {
+        "uniqueIds": [
+            "mayaspirationn"
+        ],
+        "nicknames": [
+            "Mayaspirationn"
+        ],
+        "followerCount": 175200,
+        "heartCount": 3400000,
+        "videoCount": 146,
+        "signature": "Lifestyle, self-growth, fashion\nLegal advisor",
+        "privateAccount": false
+    },
+    "7301992174555055136": {
+        "uniqueIds": [
+            "asmr.usa.texas"
+        ],
+        "nicknames": [
+            "asmr.usa.texas"
+        ],
+        "followerCount": 1700000,
+        "heartCount": 32500000,
+        "videoCount": 342,
+        "signature": "Relaxing ASMR video compilation\n\u2764\ufe0fFollow for more!\u2764\ufe0f",
+        "privateAccount": false
+    },
+    "6797466736657777670": {
+        "uniqueIds": [
+            "thatgirlmel3"
+        ],
+        "nicknames": [
+            "MEL"
+        ],
+        "followerCount": 445100,
+        "heartCount": 15800000,
+        "videoCount": 586,
+        "signature": "| Lifestyle |\n\ud83d\udce7 lena.thompson@thedigitalbrandarchitects.com\n\ud83d\udccd Seattle",
+        "privateAccount": false
+    },
+    "7096267881910404102": {
+        "uniqueIds": [
+            "she.is.aries_"
+        ],
+        "nicknames": [
+            "Bukola \ud83e\ude90"
+        ],
+        "followerCount": 8274,
+        "heartCount": 180200,
+        "videoCount": 19,
+        "signature": "Lifestyle  |  Visual Diary",
+        "privateAccount": false
+    },
+    "7339607985373627424": {
+        "uniqueIds": [
+            "asmrkitchens"
+        ],
+        "nicknames": [
+            "asmr kitchen"
+        ],
+        "followerCount": 1400000,
+        "heartCount": 18700000,
+        "videoCount": 396,
+        "signature": "To order the products featured in the videos, click the link.",
+        "privateAccount": false
+    },
+    "6944506032363471878": {
+        "uniqueIds": [
+            "sagenferns"
+        ],
+        "nicknames": [
+            "sagenferns"
+        ],
+        "followerCount": 179500,
+        "heartCount": 5800000,
+        "videoCount": 1323,
+        "signature": "hi, I\u2019m Anastasia \ud83e\udd0d\nanastasia@emeraldwoodsmgmt.com\nAmazon Storefront \ud83d\udc47\ud83c\udffb",
+        "privateAccount": false
+    },
+    "7209688713336357894": {
+        "uniqueIds": [
+            "envisiondetails"
+        ],
+        "nicknames": [
+            "\ud835\udfd6\ud835\udfd6\ud835\udfd6\ud835\udfd6"
+        ],
+        "followerCount": 72300,
         "heartCount": 2300000,
-        "videoCount": 245,
-        "signature": "\ud835\udc4e\ud835\udc52\ud835\udc60\ud835\udc61\u210e\ud835\udc52\ud835\udc61\ud835\udc56\ud835\udc50 \ud835\udc50\ud835\udc4e\ud835\udc5b\ud835\udc51\ud835\udc59\ud835\udc52\ud835\udc60 \ud835\udc53\ud835\udc5c\ud835\udc5f \ud835\udc66\ud835\udc5c\ud835\udc62\ud835\udc5f \u210e\ud835\udc5c\ud835\udc5a\ud835\udc52 \n\u2741",
+        "videoCount": 57,
+        "signature": "Our vision board.",
         "privateAccount": false
     },
-    "6930504376142529542": {
+    "6924755247550694405": {
         "uniqueIds": [
-            "georgiaferraris_"
+            "_catben_"
         ],
         "nicknames": [
-            "Georgia Ferraris"
+            "Catherine Benson"
         ],
-        "followerCount": 159900,
-        "heartCount": 6700000,
-        "videoCount": 869,
-        "signature": "my life! wellness/self-care/travel\n\n\ud83d\udc8cgeorgiaferraris1@gmail.com\nlinks \u2193 IG & YT",
+        "followerCount": 13000000,
+        "heartCount": 342100000,
+        "videoCount": 972,
+        "signature": "catben@palettemgmt.com\n\u2193Amazon Store + Links\u2193",
         "privateAccount": false
     },
-    "7197398339167716357": {
+    "6998148250403406854": {
         "uniqueIds": [
-            "empoweringscents"
+            "unscriptednoluthando"
         ],
         "nicknames": [
-            "The Empowering Scents"
+            "Advocate of Self Love"
         ],
-        "followerCount": 30600,
-        "heartCount": 280900,
-        "videoCount": 640,
-        "signature": "Planting trees for every order\ud83c\udf31\nCandles, Wax melts \nJewellery \u2728",
+        "followerCount": 159400,
+        "heartCount": 2200000,
+        "videoCount": 673,
+        "signature": "Advocate of SelfLove\nBookings:noluthandobookings@gmail.com\nWatch Podcast & more:",
         "privateAccount": false
     },
-    "6705376031250285574": {
+    "7353352929195377706": {
         "uniqueIds": [
-            "annemarie_akin"
+            "jamburlaw"
         ],
         "nicknames": [
-            "Anne-Marie Akin"
+            "Law Office Of James Burns"
         ],
-        "followerCount": 35700,
-        "heartCount": 943200,
-        "videoCount": 1817,
-        "signature": "Calm content for the Black European girl.\nDiaspora, soft, divine \u2728",
+        "followerCount": 57100,
+        "heartCount": 389900,
+        "videoCount": 150,
+        "signature": "Elite Estate Attorney | 6000+ Plans\nProtecting Wealth| Free Guides Available.",
+        "privateAccount": false
+    },
+    "6896516829067772934": {
+        "uniqueIds": [
+            "yevaberez"
+        ],
+        "nicknames": [
+            "Yeva Berez"
+        ],
+        "followerCount": 1600000,
+        "heartCount": 62000000,
+        "videoCount": 502,
+        "signature": "23 | FL\nHome | Lifestyle \n\u2709\ufe0f yevaberez@gmail.com",
+        "privateAccount": false
+    },
+    "7374431853105136686": {
+        "uniqueIds": [
+            "anna.amazon.finds"
+        ],
+        "nicknames": [
+            "Anna | Amazon Finds"
+        ],
+        "followerCount": 81500,
+        "heartCount": 1200000,
+        "videoCount": 166,
+        "signature": "Daily Amazon Finds You May Need\n\ud83d\udc8c Annayoffice@gmail.com\n\ud83d\udc47Products Below\ud83d\udc47",
+        "privateAccount": false
+    },
+    "6909717047581328389": {
+        "uniqueIds": [
+            "makeitwithmicah"
+        ],
+        "nicknames": [
+            "Micah\u2502DIY\u2502Organization | ASMR"
+        ],
+        "followerCount": 2300000,
+        "heartCount": 41500000,
+        "videoCount": 890,
+        "signature": "Micah \ud83e\udd0d IG: Make It With Micah\nEmail: Micah@PaletteMGMT.com",
+        "privateAccount": false
+    },
+    "7233487809038287915": {
+        "uniqueIds": [
+            ".organized.asmr"
+        ],
+        "nicknames": [
+            "Organizing.ASMR"
+        ],
+        "followerCount": 50600,
+        "heartCount": 638300,
+        "videoCount": 29,
+        "signature": "\ud83d\ude0c asmr \ud83d\ude0c\nhome ideas | organize | restock",
+        "privateAccount": false
+    },
+    "179224721257943040": {
+        "uniqueIds": [
+            "restockorganization.asmr"
+        ],
+        "nicknames": [
+            "Restock&OrganizationAsmr"
+        ],
+        "followerCount": 3978,
+        "heartCount": 34100,
+        "videoCount": 171,
+        "signature": "\u2728Inspirations for organizing your daily life\u2728\n\u2665\ufe0f Thanks for following me \u2665\ufe0f",
+        "privateAccount": false
+    },
+    "6856422544791258117": {
+        "uniqueIds": [
+            "cutieepaiz"
+        ],
+        "nicknames": [
+            "tiktokshop finds",
+            "satysfing organization"
+        ],
+        "followerCount": 667300,
+        "heartCount": 17400000,
+        "videoCount": 228,
+        "signature": "new restock acc @satisfying restock \u1bd3\u1863\ud802\udf69  ALL TIKTOKSHOP LINKS&REFS \u2198\ufe0f",
         "privateAccount": false
     },
     "7244022766097482760": {
@@ -68,6 +557,32 @@
         "signature": "rare.gsxr on IG",
         "privateAccount": false
     },
+    "7221914932941620251": {
+        "uniqueIds": [
+            "moonlightfemme"
+        ],
+        "nicknames": [
+            "\u2133 | Faceless Digital Marketing"
+        ],
+        "followerCount": 57400,
+        "heartCount": 1500000,
+        "videoCount": 207,
+        "signature": "Girlboss\ud83d\udda4 \ncreate your dream life selling Digital Products\u2193",
+        "privateAccount": false
+    },
+    "6705376031250285574": {
+        "uniqueIds": [
+            "annemarie_akin"
+        ],
+        "nicknames": [
+            "Anne-Marie Akin"
+        ],
+        "followerCount": 35700,
+        "heartCount": 943200,
+        "videoCount": 1818,
+        "signature": "Calm content for the Black European girl.\nDiaspora, soft, divine \u2728",
+        "privateAccount": false
+    },
     "6897318918562743298": {
         "uniqueIds": [
             "malina.jae"
@@ -81,606 +596,398 @@
         "signature": "for the girlies romanticizing their life \n\ud83d\udc8c malina@hauz.global\ndubai",
         "privateAccount": false
     },
-    "7221914932941620251": {
+    "7069110241456604206": {
         "uniqueIds": [
-            "moonlightfemme"
+            "heysweetkay"
         ],
         "nicknames": [
-            "\u2133 | Faceless Digital Marketing"
+            "heysweetkay"
         ],
-        "followerCount": 57400,
-        "heartCount": 1500000,
-        "videoCount": 206,
-        "signature": "Girlboss\ud83d\udda4 \ncreate your dream life selling Digital Products\u2193",
+        "followerCount": 280000,
+        "heartCount": 10200000,
+        "videoCount": 340,
+        "signature": "art thou feeling it mr. krabs",
         "privateAccount": false
     },
-    "7209688713336357894": {
+    "6807225026136278022": {
         "uniqueIds": [
-            "envisiondetails"
+            "nadismit"
         ],
         "nicknames": [
-            "\ud835\udfd6\ud835\udfd6\ud835\udfd6\ud835\udfd6"
+            "nadia"
         ],
-        "followerCount": 72300,
-        "heartCount": 2300000,
-        "videoCount": 57,
-        "signature": "Our vision board.",
+        "followerCount": 475600,
+        "heartCount": 28700000,
+        "videoCount": 187,
+        "signature": "home | life | asmr\n\ud83d\udc8c cnadismit@gmail.com\n\u21e3all the links\u21e3",
         "privateAccount": false
     },
-    "7096267881910404102": {
+    "6870851750980387845": {
         "uniqueIds": [
-            "she.is.aries_"
+            "ohnyaaa"
         ],
         "nicknames": [
-            "Bukola \ud83e\ude90"
+            "Nya Nicole"
         ],
-        "followerCount": 8274,
-        "heartCount": 180200,
-        "videoCount": 19,
-        "signature": "Lifestyle  |  Visual Diary",
+        "followerCount": 69800,
+        "heartCount": 4500000,
+        "videoCount": 426,
+        "signature": "DM(V)\nfashion + lifestyle girlie \ud83d\udc95\nohnyaa1@gmail.com\nbackup: @ohnyaaabackup",
         "privateAccount": false
     },
-    "6797466736657777670": {
+    "130655427343593472": {
         "uniqueIds": [
-            "thatgirlmel3"
+            "erikadmarinn"
         ],
         "nicknames": [
-            "MEL"
+            "Erika Marin"
         ],
-        "followerCount": 445100,
-        "heartCount": 15800000,
-        "videoCount": 586,
-        "signature": "| Lifestyle |\n\ud83d\udce7 lena.thompson@thedigitalbrandarchitects.com\n\ud83d\udccd Seattle",
-        "privateAccount": false
-    },
-    "7146331262931698693": {
-        "uniqueIds": [
-            "herwealthymindset"
-        ],
-        "nicknames": [
-            "Her Wealthy Mindset"
-        ],
-        "followerCount": 7202,
-        "heartCount": 498000,
-        "videoCount": 47,
-        "signature": "JOIN Her wealthy mindset Club \u2b07\ufe0f",
-        "privateAccount": false
-    },
-    "7301860720773383186": {
-        "uniqueIds": [
-            "herwealthmindset_"
-        ],
-        "nicknames": [
-            "HER WEALTH MINDSET"
-        ],
-        "followerCount": 8286,
-        "heartCount": 134600,
-        "videoCount": 98,
-        "signature": "Join the community! \u2728\ud83e\udee7\ud83c\udf80\ud83c\udf52",
-        "privateAccount": false
-    },
-    "7315101094001919008": {
-        "uniqueIds": [
-            "iamhhaannaahh",
-            "empowerhermarketplace"
-        ],
-        "nicknames": [
-            "Hannah",
-            "iamhhaannaahh"
-        ],
-        "followerCount": 16700,
-        "heartCount": 481100,
-        "videoCount": 676,
-        "signature": "Just a delusional girl \ud83c\udf38\n\u2193 manifesting my dream life \u2193",
-        "privateAccount": false
-    },
-    "7266156151421764641": {
-        "uniqueIds": [
-            "mornings2success"
-        ],
-        "nicknames": [
-            "MorningRoutinesToSuccess"
-        ],
-        "followerCount": 33300,
-        "heartCount": 477000,
-        "videoCount": 853,
-        "signature": "Morning Routines That Make \u2728YOU\u2728 Become Successful\u2728 Check out my ebook on\u27a1\ufe0f",
-        "privateAccount": false
-    },
-    "7106794378492756997": {
-        "uniqueIds": [
-            "wellnessmae"
-        ],
-        "nicknames": [
-            "MAELYS | Wellness & selfcare"
-        ],
-        "followerCount": 82000,
-        "heartCount": 2600000,
-        "videoCount": 198,
-        "signature": "motivation \ud83e\udd0d healthy lifestyle  \nIG:wellnessmae(150k)\nwellnessmaelys@gmail.com",
-        "privateAccount": false
-    },
-    "7143676761942344710": {
-        "uniqueIds": [
-            "mayaspirationn"
-        ],
-        "nicknames": [
-            "Mayaspirationn"
-        ],
-        "followerCount": 175200,
-        "heartCount": 3400000,
-        "videoCount": 146,
-        "signature": "Lifestyle, self-growth, fashion\nLegal advisor",
-        "privateAccount": false
-    },
-    "7096346849951679493": {
-        "uniqueIds": [
-            "zarinalifestyle"
-        ],
-        "nicknames": [
-            "zarina brown"
-        ],
-        "followerCount": 193500,
-        "heartCount": 4200000,
-        "videoCount": 455,
-        "signature": "wellness girl era \ud83c\udfa7\ud83e\udd0d\nmorning routine \u2022 wellness \u2022 self care\nig: zarinabrown",
-        "privateAccount": false
-    },
-    "6923875369783559173": {
-        "uniqueIds": [
-            "amelieeknr"
-        ],
-        "nicknames": [
-            "Amelie \ud83e\udd0d"
-        ],
-        "followerCount": 128200,
-        "heartCount": 7400000,
-        "videoCount": 164,
-        "signature": "@DFYNE code: Amelie\n@FITJEANS code: xamelie10\ninsta: ameliee_fitness",
-        "privateAccount": false
-    },
-    "7249755253292647451": {
-        "uniqueIds": [
-            "yana.xvi"
-        ],
-        "nicknames": [
-            "Yana\ud83e\udd40"
-        ],
-        "followerCount": 38200,
-        "heartCount": 1800000,
-        "videoCount": 496,
-        "signature": "In my growth and self care era \u2728\nYana.xvi@hotmail.com\n\ud83c\udde8\ud83c\uddfe Living in MCR \ud83c\uddec\ud83c\udde7\ud83d\udccd",
-        "privateAccount": false
-    },
-    "6947185687234905089": {
-        "uniqueIds": [
-            "motivation_central"
-        ],
-        "nicknames": [
-            "Motivation Central"
-        ],
-        "followerCount": 154400,
-        "heartCount": 2800000,
-        "videoCount": 237,
-        "signature": "First video 22/7/21\u2764\ufe0f\nFollow backup acc @motivation_central2\n\ud83d\udd25IG for business\ud83d\udd25",
-        "privateAccount": false
-    },
-    "7320780400610657285": {
-        "uniqueIds": [
-            "myraactive"
-        ],
-        "nicknames": [
-            "MYRA ACTIVE",
-            "Activewear & Athleisure Brand"
-        ],
-        "followerCount": 2672,
-        "heartCount": 37300,
-        "videoCount": 23,
-        "signature": "SEXY. SPORTY. CHIC. \nWe make activewear fashionable.\n\u0e0a\u0e38\u0e14\u0e2d\u0e2d\u0e01\u0e01\u0e33\u0e25\u0e31\u0e07\u0e01\u0e32\u0e22\u0e41\u0e1f\u0e0a\u0e31\u0e48\u0e19 \ud83d\udc93",
-        "privateAccount": false
-    },
-    "6912491687060554757": {
-        "uniqueIds": [
-            "underhustle"
-        ],
-        "nicknames": [
-            "UnderHustle"
-        ],
-        "followerCount": 629500,
-        "heartCount": 17900000,
-        "videoCount": 517,
-        "signature": "Feel free to check our IG \u2b06\ufe0f\nCulture of underrated\nHustling the way out",
-        "privateAccount": false
-    },
-    "7213037980926362630": {
-        "uniqueIds": [
-            "suceed2motivate"
-        ],
-        "nicknames": [
-            "The Mindset."
-        ],
-        "followerCount": 423900,
-        "heartCount": 4600000,
-        "videoCount": 3,
-        "signature": "Anything which you desire begins in your mind..\ud83e\udde0",
-        "privateAccount": false
-    },
-    "7399257497666274347": {
-        "uniqueIds": [
-            "ironcladmentality"
-        ],
-        "nicknames": [
-            "Ironclad Mentality"
-        ],
-        "followerCount": 85600,
-        "heartCount": 1700000,
-        "videoCount": 62,
-        "signature": "\ud83d\udca5 DAILY Motivation \ud83d\udca5\n\u26a1\ufe0fIt's TIME to Level UP\u26a1\ufe0f\n \ud83d\udd25 Road to 100k \ud83d\udd25",
-        "privateAccount": false
-    },
-    "6852824764642558982": {
-        "uniqueIds": [
-            "theebosswives"
-        ],
-        "nicknames": [
-            "TheBossWives \ud83c\udf80"
-        ],
-        "followerCount": 1600000,
-        "heartCount": 66200000,
-        "videoCount": 302,
-        "signature": "Here to motivate ambitious queens \ud83d\udc78\nBoss up your life today \ud83d\udc47",
-        "privateAccount": false
-    },
-    "7364032709340005406": {
-        "uniqueIds": [
-            "daily_mindset_shift"
-        ],
-        "nicknames": [
-            "Daily Mindset Shift"
-        ],
-        "followerCount": 53100,
-        "heartCount": 650400,
-        "videoCount": 346,
-        "signature": "Follow for your daily nuggets of motivation & Inspiration \ud83d\udcab",
-        "privateAccount": false
-    },
-    "6580147534710587397": {
-        "uniqueIds": [
-            "motiversity"
-        ],
-        "nicknames": [
-            "Motiversity"
-        ],
-        "followerCount": 3300000,
-        "heartCount": 52600000,
-        "videoCount": 1823,
-        "signature": "Follow for Daily Motivation\nApparel & Canvases @shopmotiversity",
-        "privateAccount": false
-    },
-    "7315513644024316961": {
-        "uniqueIds": [
-            "motivationversum"
-        ],
-        "nicknames": [
-            "motivationversum"
-        ],
-        "followerCount": 932500,
-        "heartCount": 12700000,
-        "videoCount": 508,
-        "signature": "\u2b07\ufe0f Join our free newsletter \u2b07\ufe0f",
-        "privateAccount": false
-    },
-    "7320383646057579563": {
-        "uniqueIds": [
-            "womenmanifestsuccess"
-        ],
-        "nicknames": [
-            "\u2728Women Manifest Success\u2728"
-        ],
-        "followerCount": 20100,
-        "heartCount": 170100,
-        "videoCount": 271,
-        "signature": "\u2728 Teaching Women \ud83d\udcbb Grow to 10K+ Followers in 90 Days \n\ud83d\udc8c DM for Collabs",
-        "privateAccount": false
-    },
-    "7187164015128167470": {
-        "uniqueIds": [
-            "motivemindsetyt"
-        ],
-        "nicknames": [
-            "Motive Mindset"
-        ],
-        "followerCount": 244700,
-        "heartCount": 2500000,
-        "videoCount": 1384,
-        "signature": "Empower your Mind. Empower your Life.\nFollow for daily doses of Motivation \ud83d\udcaf",
-        "privateAccount": false
-    },
-    "7310234499190653957": {
-        "uniqueIds": [
-            "homeof_gospel"
-        ],
-        "nicknames": [
-            "Home of Gospel"
-        ],
-        "followerCount": 5000000,
-        "heartCount": 83100000,
-        "videoCount": 2525,
-        "signature": "I love you Lord \ud83e\udd0d",
-        "privateAccount": false
-    },
-    "7211666622934697003": {
-        "uniqueIds": [
-            "emilystiletto"
-        ],
-        "nicknames": [
-            "\u2661"
-        ],
-        "followerCount": 305500,
-        "heartCount": 3800000,
-        "videoCount": 34,
-        "signature": "",
-        "privateAccount": false
-    },
-    "7285380109586121761": {
-        "uniqueIds": [
-            "gmindset.official"
-        ],
-        "nicknames": [
-            "gmindset"
-        ],
-        "followerCount": 2300000,
-        "heartCount": 74900000,
-        "videoCount": 564,
-        "signature": "Dreams don't work unless you do",
-        "privateAccount": false
-    },
-    "7305616488303232005": {
-        "uniqueIds": [
-            "placyhustle"
-        ],
-        "nicknames": [
-            "PlacyHustle"
-        ],
-        "followerCount": 663500,
-        "heartCount": 22400000,
-        "videoCount": 696,
-        "signature": "Follow Us On Instagram @PlacyHustle",
-        "privateAccount": false
-    },
-    "6998148250403406854": {
-        "uniqueIds": [
-            "unscriptednoluthando"
-        ],
-        "nicknames": [
-            "Advocate of Self Love"
-        ],
-        "followerCount": 159300,
-        "heartCount": 2200000,
-        "videoCount": 673,
-        "signature": "Advocate of SelfLove\nBookings:noluthandobookings@gmail.com\nWatch Podcast & more:",
-        "privateAccount": false
-    },
-    "6915932880540517381": {
-        "uniqueIds": [
-            "caitlinaarmstrong_"
-        ],
-        "nicknames": [
-            "Caitlin Armstrong"
-        ],
-        "followerCount": 169600,
+        "followerCount": 177900,
         "heartCount": 5500000,
-        "videoCount": 596,
-        "signature": "Inspire | Motivate | Create\n\ud81a\udc61 australia\nGrow your socials \u2193",
+        "videoCount": 951,
+        "signature": "home and lifestyle\n\u2709\ufe0f erikadmarin@gmail.com\nshop my home and more\ud83d\udc47\ud83c\udffc",
         "privateAccount": false
     },
-    "7091786698757473286": {
+    "7122078295949001733": {
         "uniqueIds": [
-            "ascendwisdom"
+            "hellipatell"
         ],
         "nicknames": [
-            "AscendWisdom"
+            "Helli Patel"
         ],
-        "followerCount": 464100,
-        "heartCount": 30800000,
-        "videoCount": 267,
-        "signature": "Motivating You To Be Successful \ud83d\ude80\n\nLearn How To Edit Like This \u2b07\ufe0f",
+        "followerCount": 30800,
+        "heartCount": 1100000,
+        "videoCount": 559,
+        "signature": "sharing my life \ud83e\udd0d\u2728\n\n\ud83d\udc8c hellipatel.collabs@gmail.com",
         "privateAccount": false
     },
-    "6803157416059880453": {
+    "6808581777717462022": {
         "uniqueIds": [
-            "oreebby"
+            "maddycorbin"
         ],
         "nicknames": [
-            "O\ua564"
+            "Maddy Corbin"
         ],
-        "followerCount": 19000,
-        "heartCount": 908300,
-        "videoCount": 431,
-        "signature": "Oreoluwa\n\ud83d\udc8cc.idowu910@gmail.com\nIG: orexbby\n\ud83d\udccdCanada",
+        "followerCount": 238500,
+        "heartCount": 7700000,
+        "videoCount": 663,
+        "signature": "INDIANAPOLIS, IN\nBeautiful B*tches Only \ud83e\udd0d\nhello@maddycorbin.com",
         "privateAccount": false
     },
-    "7312534983868072965": {
+    "6771097341370876934": {
         "uniqueIds": [
-            "alexnova099"
+            "sydneynicoleslone"
         ],
         "nicknames": [
-            "Alex Nova"
+            "Sydney Slone"
         ],
-        "followerCount": 13,
-        "heartCount": 1,
-        "videoCount": 2,
-        "signature": "",
+        "followerCount": 635800,
+        "heartCount": 25800000,
+        "videoCount": 1513,
+        "signature": "affordable fashion, mom life, + amazon finds\n\ud83c\udf99\ufe0f @Unboxing Hour\n\ud83d\udce6 shop my SF \u2193",
         "privateAccount": false
     },
-    "7411145931023762475": {
+    "6875149358373176325": {
         "uniqueIds": [
-            "rs_redditstories01"
+            "everythingenvy"
         ],
         "nicknames": [
-            "RS_reddit stories \ud83d\udca0"
+            "Margaret & Stetson"
         ],
-        "followerCount": 13700,
-        "heartCount": 85500,
-        "videoCount": 353,
-        "signature": "",
+        "followerCount": 409000,
+        "heartCount": 9800000,
+        "videoCount": 1089,
+        "signature": "Mother-daughter duo\nAmazon finds, home organization, & more\nSHOP OUR VIDEOS \u2b07\ufe0f",
         "privateAccount": false
     },
-    "7365535753181479969": {
+    "7325407715124167726": {
         "uniqueIds": [
-            "yagmur_tik"
+            "luckied.com"
         ],
         "nicknames": [
-            "VibesOfSuccess",
-            "VibesOfLight"
+            "Luckied"
         ],
-        "followerCount": 302200,
-        "heartCount": 10900000,
-        "videoCount": 43,
-        "signature": "\"You lose people that are not meant to be with the highest version of you\"\u2728",
+        "followerCount": 45400,
+        "heartCount": 1800000,
+        "videoCount": 729,
+        "signature": "Free Worldwide Shipping\nProducts Link\ud83d\udc47",
         "privateAccount": false
     },
-    "7080213387756553262": {
+    "7156213065694954538": {
         "uniqueIds": [
-            "sherrishowtv"
+            "sosimplyjessica"
         ],
         "nicknames": [
-            "SHERRI"
+            "sosimplyjessica"
         ],
-        "followerCount": 858200,
-        "heartCount": 26100000,
-        "videoCount": 1608,
-        "signature": "\u2b50\ufe0f THE BEST TIME IN DAYTIME \u2b50\ufe0f ALL NEW WEEKDAYS \u2b50\ufe0f #SherriShowTV",
+        "followerCount": 12900,
+        "heartCount": 225900,
+        "videoCount": 185,
+        "signature": "Follow me on IG @sosimplyjessica\n\u2b07\ufe0fAffiliate Links\u2b07\ufe0f",
         "privateAccount": false
     },
-    "7448197829590696982": {
+    "6979278089704948741": {
         "uniqueIds": [
-            "scep49"
+            "dailynrfinds"
         ],
         "nicknames": [
-            "scep49"
+            "dailynrfinds"
         ],
-        "followerCount": 146000,
-        "heartCount": 892700,
-        "videoCount": 36,
-        "signature": "Thoughts | Mindset | Inspiration",
+        "followerCount": 57600,
+        "heartCount": 1500000,
+        "videoCount": 371,
+        "signature": "lifestyle & home\n\ud83d\udc8c dailyn@lucenamgmt.com\n\u21e3MY AMAZON\u21e3",
         "privateAccount": false
     },
-    "7367275462312510496": {
+    "6973726241317307397": {
         "uniqueIds": [
-            "richmindset_8"
+            "askinem"
         ],
         "nicknames": [
-            "richmindset_8"
+            "Emily Askin - Home/Lifestyle"
         ],
-        "followerCount": 208500,
-        "heartCount": 7400000,
-        "videoCount": 2377,
-        "signature": "\u271d\ufe0f@mindset___8 \nCheck out my books /dm for promotion",
+        "followerCount": 635800,
+        "heartCount": 39800000,
+        "videoCount": 988,
+        "signature": "home \u2022 organization \u2022 restocks\naskinemi@gmail.com \ud83d\udc8c \nall products storefront \ud83d\udc47",
         "privateAccount": false
     },
-    "7401737461615920146": {
+    "7148674616521360430": {
         "uniqueIds": [
-            "pradipthakali922"
+            "bbbigdeer"
         ],
         "nicknames": [
-            "pradipthakali922"
+            "bbbigdeer"
         ],
-        "followerCount": 38500,
-        "heartCount": 479100,
-        "videoCount": 1,
-        "signature": "Khokka",
+        "followerCount": 712600,
+        "heartCount": 12100000,
+        "videoCount": 220,
+        "signature": "\ud83e\udd8c\nProduct Designer\nTech | Desk | Life\nbbbigdeer@gmail.com",
         "privateAccount": false
     },
-    "7395645720878236715": {
+    "6974457571998499845": {
         "uniqueIds": [
-            "motivation.wave8"
+            "nefasmr"
         ],
         "nicknames": [
-            "Motivation Wave"
+            "NEFASMR"
         ],
         "followerCount": 1100000,
-        "heartCount": 9800000,
-        "videoCount": 357,
-        "signature": "What if one Quotes could change your life?\nCheck out\" Tiktok\" to learn from us\ud83c\udfa7",
+        "heartCount": 32300000,
+        "videoCount": 217,
+        "signature": "Insta @nefasmr\n\ud83d\udc8c nefasmrcollabs@gmail.com \ud83d\udc8c",
         "privateAccount": false
     },
-    "6730984875141006341": {
+    "7187652448072090630": {
         "uniqueIds": [
-            "robdial"
+            "decmonkey"
         ],
         "nicknames": [
-            "Rob Dial | The Mindset Mentor"
+            "Decmonkey"
         ],
-        "followerCount": 818800,
-        "heartCount": 7200000,
-        "videoCount": 1147,
-        "signature": "\ud83c\udf99The Mindset Mentor Podcast\n\ud83d\udccaLearn how to monetize your coaching business \ud83d\ude80\ud83d\udc47",
+        "followerCount": 701700,
+        "heartCount": 13900000,
+        "videoCount": 235,
+        "signature": "Product and life\nmmmoredeer@gmail.com\n\ud83d\udc47\ud83c\udffbLink in shop\ud83d\udc47\ud83c\udffb",
         "privateAccount": false
     },
-    "7182498175545181190": {
+    "7261607098013795355": {
         "uniqueIds": [
-            "brbcatchingflights"
+            "myluminair"
         ],
         "nicknames": [
-            "Dorna | Old Money Aesthetic"
+            "LuminAir"
         ],
-        "followerCount": 76500,
-        "heartCount": 4100000,
-        "videoCount": 329,
-        "signature": "Old soul romanticizing life\ud83e\udd40\nTravel, Elegance, Polo, DolceVita\ud83d\udc0e\n\ud83d\udccdDubai",
+        "followerCount": 10400,
+        "heartCount": 162400,
+        "videoCount": 207,
+        "signature": "Volcano Humidifier Pro \ud83c\udf0b\nVoted #1 Gift This Holiday Season \ud83c\udf81\nLimited Stock \u23f3",
         "privateAccount": false
     },
-    "7192974836665336837": {
+    "6792710903256089606": {
         "uniqueIds": [
-            "cycasmotivationofficial"
+            "kellie_atkinson"
         ],
         "nicknames": [
-            "cycasmotivationofficial"
+            "Kellie Atkinson"
         ],
-        "followerCount": 4600000,
-        "heartCount": 64300000,
-        "videoCount": 845,
-        "signature": "PODCAST & INSTAGRAM \ud83d\udc47",
+        "followerCount": 4700000,
+        "heartCount": 137400000,
+        "videoCount": 752,
+        "signature": "ASMR \u2022 Organization \u2022 Restocks\n\ud83d\udc8c kelliea1602@icloud.com\n\u21e3Amzn favorites & more\u21e3",
         "privateAccount": false
     },
-    "7037156196772824070": {
+    "6810868298629071877": {
         "uniqueIds": [
-            "danielavisuals"
+            "glenxda"
         ],
         "nicknames": [
-            "danielavisuals"
+            "Glenda"
         ],
-        "followerCount": 233500,
-        "heartCount": 7900000,
-        "videoCount": 366,
-        "signature": "\u263e visual diary \nelevate your content - \nmentorship, presets, & more \uffec",
+        "followerCount": 892200,
+        "heartCount": 37700000,
+        "videoCount": 291,
+        "signature": "lifestyle | asmr | home\n\u2709\ufe0f glenxda@gmail.com\n\u2193 LINKS \u2193",
         "privateAccount": false
     },
-    "7274835543756768288": {
+    "6823906335772967942": {
         "uniqueIds": [
-            "theglowup_challenge"
+            "anya.bumag"
         ],
         "nicknames": [
-            "The Glow Up Challenge"
+            "Anya"
         ],
-        "followerCount": 48600,
-        "heartCount": 459900,
-        "videoCount": 132,
-        "signature": "Motivation | Wellness | Wealth\nDaily inspiration to help you level up & glow \u2728",
+        "followerCount": 818200,
+        "heartCount": 22500000,
+        "videoCount": 336,
+        "signature": "Gadgets, Decor etc. \ud83e\udd0d\n\ud83d\udc8c anya@500mgmt.com\n\u2728Shop My Videos Here \u2728\ud83d\udc47\ud83c\udffb",
         "privateAccount": false
     },
-    "7441509627739472952": {
+    "7149908990364992517": {
         "uniqueIds": [
-            "digital_faesy"
+            "sihame_home"
         ],
         "nicknames": [
-            "Digital Faesy"
+            "sihame_home"
         ],
-        "followerCount": 3566,
-        "heartCount": 53300,
-        "videoCount": 126,
-        "signature": "SMM | Paid Ads | Monetization \ud83d\udcb0\nHelping you grow & sell online",
+        "followerCount": 2900000,
+        "heartCount": 58500000,
+        "videoCount": 214,
+        "signature": "\u25ab\ufe0fHaushalt \u25ab\ufe0fOrdnung \u25ab\ufe0fLifestyle \n\n\ud83d\udce9 sihame_home@outlook.com",
+        "privateAccount": false
+    },
+    "7197183773811819525": {
+        "uniqueIds": [
+            "bk_owners"
+        ],
+        "nicknames": [
+            "Bkowners"
+        ],
+        "followerCount": 370600,
+        "heartCount": 5500000,
+        "videoCount": 1685,
+        "signature": "Welcome to Bkowners \nUpgrade Your Home Style With Us \n   Check Products Links",
+        "privateAccount": false
+    },
+    "6778118587317404678": {
+        "uniqueIds": [
+            "lopwert"
+        ],
+        "nicknames": [
+            "Luke"
+        ],
+        "followerCount": 1200000,
+        "heartCount": 36100000,
+        "videoCount": 4328,
+        "signature": "Owner of @Yass Clean \nBrand Enquiries - Elevation PR\nLuke@elevationpr.co.uk",
+        "privateAccount": false
+    },
+    "6776020666518717445": {
+        "uniqueIds": [
+            "kaelimaee"
+        ],
+        "nicknames": [
+            "kaeli mae"
+        ],
+        "followerCount": 14400000,
+        "heartCount": 677600000,
+        "videoCount": 1563,
+        "signature": "all things life + home\ud83e\uddda\ud83c\udffb\n \ud83d\udc8c kaeli@underscoretalent.com\n\u21e3MY IG & YT\u21e3",
+        "privateAccount": false
+    },
+    "6801249999201272838": {
+        "uniqueIds": [
+            "julianna_claire"
+        ],
+        "nicknames": [
+            "Julianna\u2002Claire"
+        ],
+        "followerCount": 2900000,
+        "heartCount": 88400000,
+        "videoCount": 1069,
+        "signature": "you'll like it here, stay awhile \ud83e\udd0d\n\ud83c\udf80 Founder of @ROAME \nALL my finds here \ud83d\udc47\ud83c\udffb",
+        "privateAccount": false
+    },
+    "6687600734508958726": {
+        "uniqueIds": [
+            "thaatgirlcarlie"
+        ],
+        "nicknames": [
+            "Cat"
+        ],
+        "followerCount": 510000,
+        "heartCount": 19700000,
+        "videoCount": 1403,
+        "signature": "WILL BE POSTING SOON!! \ud83e\udef6\ud83c\udffc\n\ud83d\udce7: thaatgirlcarlie@yahoo.com\n\ud83e\uddd6\ud83c\udffc\u200d\u2640\ufe0f\ud83e\udee7\ud83d\udec1\ud83d\udc76\ud83c\udffc\ud83c\udf7c\ud83e\uddff",
+        "privateAccount": false
+    },
+    "6897789496629265414": {
+        "uniqueIds": [
+            "melissa_fakler"
+        ],
+        "nicknames": [
+            "Melissa Fakler"
+        ],
+        "followerCount": 470700,
+        "heartCount": 16500000,
+        "videoCount": 350,
+        "signature": "Happy you're here \u2661\n\ud83d\udc8c melissa_fakler@grail-talent.com\n\n\u2193 AMAZON & LINKS BELOW \u2193",
+        "privateAccount": false
+    },
+    "7111786018798552070": {
+        "uniqueIds": [
+            "sam.shan.shops"
+        ],
+        "nicknames": [
+            "Sam Shan Shops \ud83e\udd8b"
+        ],
+        "followerCount": 1400000,
+        "heartCount": 60700000,
+        "videoCount": 627,
+        "signature": "AMAZON FINDS\n\ud83d\udc8c nicole.herrera@thedigitalbrandarchitects.com\n\ud83d\udc47\ud83c\udffdSHOP HERE\ud83d\udc47\ud83c\udffd",
+        "privateAccount": false
+    },
+    "7134857619843662890": {
+        "uniqueIds": [
+            "brookes_buys"
+        ],
+        "nicknames": [
+            "Brookes Buys"
+        ],
+        "followerCount": 349500,
+        "heartCount": 8000000,
+        "videoCount": 692,
+        "signature": "Cleaning & Organizational Finds\nSolving problems you didn\u2019t know you had",
+        "privateAccount": false
+    },
+    "7339909685062255648": {
+        "uniqueIds": [
+            "kallosastro",
+            "kallosastro_worldwide",
+            "bygoddessia"
+        ],
+        "nicknames": [
+            "kallosastro",
+            "kallosastro_worldwide",
+            "bygoddessia"
+        ],
+        "followerCount": 91300,
+        "heartCount": 7500000,
+        "videoCount": 183,
+        "signature": "a boy with no limits in a limited society \ud83e\udebd\n\nmy youtube \u02cf\u02cb\u00b0\u2022*\u2040\u27b7",
+        "privateAccount": false
+    },
+    "7215929862530368518": {
+        "uniqueIds": [
+            "essy_baiya"
+        ],
+        "nicknames": [
+            "Esther"
+        ],
+        "followerCount": 10,
+        "heartCount": 0,
+        "videoCount": 1,
+        "signature": "",
         "privateAccount": false
     },
     "7357875260710159403": {
@@ -696,30 +1003,186 @@
         "signature": "Boss ladies rising, ruling, and owning their future. Join the movement today!\ud83d\udcaa",
         "privateAccount": false
     },
-    "6962185449620423685": {
+    "7337090947351053358": {
         "uniqueIds": [
-            "melrobbins"
+            "domiasmr2"
         ],
         "nicknames": [
-            "Mel Robbins"
+            "Domiasmr2"
         ],
-        "followerCount": 4600000,
-        "heartCount": 54100000,
-        "videoCount": 1879,
-        "signature": "Author, Podcaster, Friend\n\ud83d\udc9a The LET THEM Theory\n\ud83c\udfa7 The Mel Robbins Podcast",
+        "followerCount": 400400,
+        "heartCount": 7500000,
+        "videoCount": 163,
+        "signature": "Asmr\u2728organization\u2728 cleaning\u2728restocking",
         "privateAccount": false
     },
-    "7416533917739533345": {
+    "7397572905804235782": {
         "uniqueIds": [
-            "wellforself"
+            "yu.zhou_"
         ],
         "nicknames": [
-            "wellforself"
+            "Yu Zhou"
         ],
-        "followerCount": 32500,
-        "heartCount": 918100,
-        "videoCount": 25,
-        "signature": "safe wellness space\u2601\ufe0f by @danielavisuals holistic nutritionist PT & yoga teacher",
+        "followerCount": 3,
+        "heartCount": 0,
+        "videoCount": 0,
+        "signature": "Curated trends, smart picks, shop smarter, live better! \ud83d\udc9c\ud83c\udf0d",
+        "privateAccount": false
+    },
+    "6609059495866155013": {
+        "uniqueIds": [
+            "officiallytonytoks"
+        ],
+        "nicknames": [
+            "TonyTalks"
+        ],
+        "followerCount": 3000000,
+        "heartCount": 85600000,
+        "videoCount": 1053,
+        "signature": "LETS LAUGH \ud83d\ude02",
+        "privateAccount": false
+    },
+    "7345770599032488992": {
+        "uniqueIds": [
+            "amarax__"
+        ],
+        "nicknames": [
+            "Jax"
+        ],
+        "followerCount": 9,
+        "heartCount": 0,
+        "videoCount": 0,
+        "signature": "Curating unique, high-quality home decor and consumer goods.",
+        "privateAccount": false
+    },
+    "7046356803433235458": {
+        "uniqueIds": [
+            "ama.rax_"
+        ],
+        "nicknames": [
+            "Amarax"
+        ],
+        "followerCount": 13,
+        "heartCount": 12,
+        "videoCount": 4,
+        "signature": "Curating unique, high-quality home decor and consumer goods. @ama.rax_",
+        "privateAccount": false
+    },
+    "7441509627739472952": {
+        "uniqueIds": [
+            "digital_faesy"
+        ],
+        "nicknames": [
+            "Digital Faesy"
+        ],
+        "followerCount": 3567,
+        "heartCount": 53300,
+        "videoCount": 126,
+        "signature": "SMM | Paid Ads | Monetization \ud83d\udcb0\nHelping you grow & sell online",
+        "privateAccount": false
+    },
+    "6811474188823217158": {
+        "uniqueIds": [
+            "svit3d"
+        ],
+        "nicknames": [
+            "Svit3D"
+        ],
+        "followerCount": 73800,
+        "heartCount": 412800,
+        "videoCount": 179,
+        "signature": "Interior design, visualization \nUAH +380677153333\n\ud83d\udd38 Ukraine \ud83d\udd38 Europe",
+        "privateAccount": false
+    },
+    "7037156196772824070": {
+        "uniqueIds": [
+            "danielavisuals"
+        ],
+        "nicknames": [
+            "danielavisuals"
+        ],
+        "followerCount": 233500,
+        "heartCount": 7900000,
+        "videoCount": 366,
+        "signature": "\u263e visual diary \nelevate your content - \nmentorship, presets, & more \uffec",
+        "privateAccount": false
+    },
+    "7247962312815543339": {
+        "uniqueIds": [
+            "asmrrestockingus"
+        ],
+        "nicknames": [
+            "ASMR Restocking"
+        ],
+        "followerCount": 474300,
+        "heartCount": 6100000,
+        "videoCount": 317,
+        "signature": "Cleaning \ud83d\udca0 Organization \ud83d\udca0 Restocking\n\u21e3 My Link \u21e3",
+        "privateAccount": false
+    },
+    "7286134403662890027": {
+        "uniqueIds": [
+            "miss.restocking"
+        ],
+        "nicknames": [
+            "Miss Restocking"
+        ],
+        "followerCount": 377300,
+        "heartCount": 3800000,
+        "videoCount": 113,
+        "signature": "Follow me for more video!!!\nCleaning \u2022 Organizing \u2022 Restocking",
+        "privateAccount": false
+    },
+    "6835655194862273542": {
+        "uniqueIds": [
+            "kate_cleanhome"
+        ],
+        "nicknames": [
+            "Kate_cleanhome"
+        ],
+        "followerCount": 903600,
+        "heartCount": 48800000,
+        "videoCount": 755,
+        "signature": "Cleaning | ASMR | Recipes \n\n   \ud83d\udc8c smol1414@gmail.com\n\n     \ud83d\udcabAmazon Page\ud83d\udcab",
+        "privateAccount": false
+    },
+    "6850965561603490822": {
+        "uniqueIds": [
+            "decorsnippets"
+        ],
+        "nicknames": [
+            "Rue"
+        ],
+        "followerCount": 1100000,
+        "heartCount": 13200000,
+        "videoCount": 407,
+        "signature": "Rue | Home Decor | Lifestyle \n\ud83d\udce7 rue@proudmanagement.net \ud83d\udce7\n\n\u2b07\ufe0f Product Links \u2b07\ufe0f",
+        "privateAccount": false
+    },
+    "6574083983884615685": {
+        "uniqueIds": [
+            "powerhouseofthecel"
+        ],
+        "nicknames": [
+            "celia\ud83c\uddf2\ud83c\uddfd"
+        ],
+        "followerCount": 3400000,
+        "heartCount": 126800000,
+        "videoCount": 3999,
+        "signature": "my poetry #books are now on Amazon! Just search \u201cdiary of a romantica\u201d :) | \ud83c\uddf2\ud83c\uddfd",
+        "privateAccount": false
+    },
+    "7441167132648211489": {
+        "uniqueIds": [
+            "the.socialgeek"
+        ],
+        "nicknames": [
+            "Tesia || Digital Markerting"
+        ],
+        "followerCount": 13900,
+        "heartCount": 144300,
+        "videoCount": 169,
+        "signature": "SMM | UGC | PaidAds\nStart Selling Digital Products \u2935\ufe0f\n\ud83d\udce9Ukachukwutesia@gmail.com",
         "privateAccount": false
     }
 }

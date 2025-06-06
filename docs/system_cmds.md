@@ -6,7 +6,7 @@
   - Starts the FastAPI backend with hot reload (default: http://127.0.0.1:8000)
 - `uvicorn backend.api.main:app --reload`
   - Direct command to run the backend API (same as above)
-- `PYTHONPATH=. python3 backend/pipeline_v2/runners/run_all.py`
+- PYTHONPATH=. python3 backend/pipeline_v2/runners/run_all.py``
   - Runs the full pipeline_v2 system
 
 ## Frontend (Next.js UI)

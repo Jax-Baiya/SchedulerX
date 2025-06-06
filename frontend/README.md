@@ -29,3 +29,8 @@ See the main [README](../docs/README.md) for setup instructions.
 ## See Also
 - [Backend API Docs](../backend/api/docs/README.md)
 - [Pipeline v2 Docs](../backend/pipeline_v2/docs/README.md)
+
+## Authentication
+- All authentication is handled by Supabase Auth (email/password, OAuth, etc.) via the frontend.
+- The backend validates Supabase JWTs for all protected endpoints.
+- There are no custom backend login/register endpoints.

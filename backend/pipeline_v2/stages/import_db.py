@@ -117,7 +117,8 @@ def run():
     logging.info("🎉 All applicable sheets imported successfully.")
 
     # Call Prisma sync
-    os.system("python3 -m stages.prisma_sync")
+    # os.system("python3 -m stages.prisma_sync")
+    # Commented out to prevent duplicate Prisma Studio launch
 
 if __name__ == "__main__":
     run()

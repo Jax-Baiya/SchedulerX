@@ -35,11 +35,19 @@ cd frontend && npm run dev
 ## 🗺️ System Overview
 
 SchedulerX consists of:
-- **Backend API**: FastAPI, SQLAlchemy, APScheduler, JWT Auth
+- **Backend API**: FastAPI, SQLAlchemy, APScheduler, Supabase JWT Auth
 - **Pipeline v2**: Modular Python pipeline for ingest, transform, and DB import
-- **Frontend**: Next.js, Tailwind, ShadCN UI, JWT Auth
+- **Frontend**: Next.js, Tailwind, ShadCN UI, Supabase Auth
 - **Database**: PostgreSQL, Prisma ORM
 - **Cloud Storage**: Cloudflare R2
+
+---
+
+## 🛡️ Authentication
+
+- All authentication is handled by Supabase Auth (email/password, OAuth, etc.) via the frontend.
+- The backend validates Supabase JWTs for all protected endpoints.
+- There are no custom backend login/register endpoints.
 
 ---
 

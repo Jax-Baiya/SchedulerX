@@ -56,4 +56,13 @@ SchedulerX is a modular automation engine for ingesting, transforming, and sched
 
 ---
 
+## [v1.2.0] — 2025-06-03
+
+### Security & Auth
+- 🔐 Migrated to pure Supabase Auth (email/password, OAuth, etc.)
+- ✅ Backend now validates only Supabase JWTs
+- 🧹 Removed legacy backend login/register endpoints and custom JWT logic
+
+---
+
 Built with ❤️ by [Jax-Baiya](https://github.com/Jax-Baiya)

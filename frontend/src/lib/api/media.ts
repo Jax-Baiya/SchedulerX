@@ -35,7 +35,16 @@ export async function deleteMedia(id: number, token: string) {
   });
 }
 
-export async function mockUploadFiles(files: FileList): Promise<void> {
-  // TODO: Replace with real upload API call
-  return Promise.resolve();
+export async function uploadMediaFiles(files: FileList, token: string): Promise<void> {
+  const formData = new FormData();
+  Array.from(files).forEach((file) => formData.append('files', file));
+  const res = await fetch('/api/v1/r2/upload', {
+    method: 'POST',
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    body: formData,
+  });
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({ detail: res.statusText }));
+    throw new Error(error.detail || 'Upload failed');
+  }
 }

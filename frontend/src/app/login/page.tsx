@@ -1,11 +1,16 @@
 "use client";
 import { useState } from "react";
-import { login, register } from "@/lib/api/auth";
+import { createClient } from "@supabase/supabase-js";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
+
 export default function LoginPage() {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isRegister, setIsRegister] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -16,13 +21,16 @@ export default function LoginPage() {
     setError(null);
     try {
       if (isRegister) {
-        await register(username, password);
+        const { error } = await supabase.auth.signUp({ email, password });
+        if (error) throw error;
       } else {
-        await login(username, password);
+        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) throw error;
       }
       router.push("/");
-    } catch (err: any) {
-      setError(err.message || "Auth failed");
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : String(err);
+      setError(message || "Auth failed");
     }
   }
 
@@ -32,10 +40,11 @@ export default function LoginPage() {
         <h2 className="text-2xl font-bold mb-2">{isRegister ? "Register" : "Login"}</h2>
         <input
           className="border p-2 rounded"
-          placeholder="Username"
-          value={username}
-          onChange={e => setUsername(e.target.value)}
+          placeholder="Email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
           required
+          type="email"
         />
         <input
           className="border p-2 rounded"

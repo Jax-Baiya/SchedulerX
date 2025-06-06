@@ -117,10 +117,6 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   Serializable: 'Serializable'
 });
 
-exports.Prisma.Alembic_versionScalarFieldEnum = {
-  version_num: 'version_num'
-};
-
 exports.Prisma.AuthorsScalarFieldEnum = {
   authors_id: 'authors_id',
   authors_uniqueids: 'authors_uniqueids',
@@ -223,7 +219,6 @@ exports.Prisma.NullsOrder = {
 
 
 exports.Prisma.ModelName = {
-  alembic_version: 'alembic_version',
   authors: 'authors',
   bookmarks: 'bookmarks',
   consolidated: 'consolidated',

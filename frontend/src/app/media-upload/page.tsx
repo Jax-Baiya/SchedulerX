@@ -4,13 +4,15 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
-// import { mockUploadFiles } from "@/lib/api/media";
+import { uploadMediaFiles } from "@/lib/api/media";
+import { useToast } from "@/components/ui/toast";
 
 export default function MediaUploadPage() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null);
   const [uploading, setUploading] = useState(false);
   const [uploadResult, setUploadResult] = useState<string | null>(null);
+  const { toast } = useToast();
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedFiles(e.target.files);
@@ -24,11 +26,13 @@ export default function MediaUploadPage() {
     try {
       const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) throw new Error("Not authenticated");
-      // TODO: Implement real upload API call here using the backend endpoint
-      // await uploadMediaFiles(selectedFiles, token);
-      setUploadResult("Upload successful! (mocked)");
+      await uploadMediaFiles(selectedFiles, token);
+      setUploadResult("Upload successful!");
+      toast({ title: "Upload successful!", description: `${selectedFiles.length} file(s) uploaded.` });
     } catch (e: unknown) {
-      setUploadResult(e instanceof Error ? e.message : "Upload failed");
+      const msg = e instanceof Error ? e.message : "Upload failed";
+      setUploadResult(msg);
+      toast({ title: "Upload failed", description: msg, variant: "destructive" });
     } finally {
       setUploading(false);
     }
