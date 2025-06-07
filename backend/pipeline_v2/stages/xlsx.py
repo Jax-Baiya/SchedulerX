@@ -143,12 +143,20 @@ def run():
     prepare_pipeline_paths(session)
     base_output = session["dst_root"]
     decoded_dir = session["decoded_directory"]
-    xlsx_dir = os.path.dirname(session["xlsx_file"])
+    xlsx_dir = os.path.join(base_output, "xlsx_files")
     os.makedirs(xlsx_dir, exist_ok=True)
 
-    # Default output file
-    output_file = os.path.basename(session["xlsx_file"])
-    
+    # Always use options['xlsx_file'] if provided (from API/frontend)
+    output_file = None
+    if "options" in session and isinstance(session["options"], dict):
+        output_file = session["options"].get("xlsx_file")
+    if not output_file:
+        output_file = os.path.basename(session.get("xlsx_file", "data.xlsx"))
+    if not output_file:
+        output_file = "data.xlsx"
+    session["xlsx_file"] = os.path.join(xlsx_dir, output_file)
+    save_session(session)
+
     # Only prompt in step mode
     if run_mode_manager.run_mode == "step":
         output_file = smart_prompt(
@@ -158,6 +166,7 @@ def run():
         session["xlsx_file"] = os.path.join(xlsx_dir, output_file)
         save_session(session)
 
+    # In auto mode, do NOT prompt; always use session["xlsx_file"]
     output_file_path = session["xlsx_file"]
 
     file_paths = {

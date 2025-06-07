@@ -27,6 +27,7 @@ export default function PipelinePage() {
   const [features, setFeatures] = useState<string[]>([]);
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
   const [dbProfiles, setDbProfiles] = useState<{ name: string; display_name: string }[]>([]);
+  const [excelFileName, setExcelFileName] = useState("data.xlsx");
   const { toast } = useToast();
 
   // Load source directories from localStorage
@@ -111,7 +112,7 @@ export default function PipelinePage() {
       return;
     }
     setLoading(true);
-    let parsedOptions = {};
+    let parsedOptions: Record<string, unknown> = {};
     try {
       parsedOptions = options ? JSON.parse(options) : {};
     } catch {
@@ -119,6 +120,8 @@ export default function PipelinePage() {
       setLoading(false);
       return;
     }
+    // Always set xlsx_file in options from the dedicated field
+    (parsedOptions as Record<string, unknown>)["xlsx_file"] = excelFileName;
     try {
       const config = {
         stages,
@@ -241,6 +244,14 @@ export default function PipelinePage() {
                 value={outputDirectory}
                 onChange={(e) => setOutputDirectory(e.target.value)}
                 placeholder="assets"
+              />
+            </div>
+            <div>
+              <label className="block font-medium mb-1">Excel File Name</label>
+              <Input
+                value={excelFileName}
+                onChange={(e) => setExcelFileName(e.target.value)}
+                placeholder="data.xlsx"
               />
             </div>
             <div>
