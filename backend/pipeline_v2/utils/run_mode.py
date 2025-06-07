@@ -57,6 +57,7 @@ class RunModeManager:
     def select_src_path(self, stage: int = 0) -> str:
         """
         Get source path based on run mode and stage.
+        Always prefer session/config values if present (for API-driven runs).
     
     Args:
             stage: Pipeline stage number
@@ -64,8 +65,18 @@ class RunModeManager:
     Returns:
             Selected source path
         """
+        # Prefer src_root from session if set
+        src_root = self._session_data.get("src_root")
+        if src_root:
+            return src_root
+        # Fallback: selected_source_path/session
+        if self.selected_source_path:
+            return self.selected_source_path
+        # Fallback: src_profile (if it's a path)
+        if self.src_profile and os.path.exists(self.src_profile):
+            return self.src_profile
+        # If still missing, only prompt in CLI/step mode
         if self.run_mode == "auto":
-            # In auto mode, use the path selected during initialization
             return self.selected_source_path or self._session_data.get("selected_source_path")
         else:
             # In step mode, only prompt for stage 0 or if no path is selected yet

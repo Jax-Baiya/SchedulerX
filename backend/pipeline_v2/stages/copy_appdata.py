@@ -41,13 +41,15 @@ def run():
 
     session = load_session()
 
-    # Use run mode manager to get source path
-    run_mode_manager = get_run_mode_manager()
-    src_root = run_mode_manager.select_src_path(stage=0)
+    # Always use src_root from session/config if present
+    src_root = session.get("src_root")
+    if not src_root:
+        # Use run mode manager as fallback
+        run_mode_manager = get_run_mode_manager()
+        src_root = run_mode_manager.select_src_path(stage=0)
+        session["src_root"] = src_root
     # dst_root = "assets"  # Hardcoded as in original
     # Use prepare_pipeline_paths to set up output paths
-    session["src_root"] = src_root
-    # session["dst_root"] = dst_root
     prepare_pipeline_paths(session)  # Generates and stores pipeline file paths
     dst_root = session["dst_root"]
     copy_appdata_folder(src_root, dst_root)

@@ -14,7 +14,7 @@ from fastapi.openapi.utils import get_openapi
 import logging
 
 # Then import routes
-from backend.api.routes import run, media, upload, analytics, r2, scheduler, tasks, settings, auth, admin
+from backend.api.routes import run, media, upload, analytics, r2, scheduler, tasks, settings, auth, admin, db_profiles
 from backend.api.services.scheduler_job import start_scheduler
 
 app = FastAPI(
@@ -45,6 +45,7 @@ app.include_router(tasks.router, prefix="/api/v1", tags=["tasks"])
 app.include_router(settings.router, prefix="/api/v1", tags=["settings"])
 app.include_router(auth.router, prefix="/api/v1", tags=["auth"])
 app.include_router(admin.router, prefix="/api/v1", tags=["admin"])
+app.include_router(db_profiles.router, prefix="/api/v1", tags=["db_profiles"])
 
 # Start the APScheduler background job for scheduled posts
 start_scheduler()

@@ -1,13 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "../../components/ui/textarea";
 import { triggerPipeline } from "@/lib/api/pipeline";
 import { useToast } from "@/components/ui/toast";
+import { getDbProfiles } from "@/lib/api/db_profiles";
 
 const defaultStages = [0, 1, 2, 3, 4, 5, 6];
+const SOURCE_DIRS_KEY = "schedulerx_source_dirs";
 
 export default function PipelinePage() {
   const [runMode, setRunMode] = useState("step");
@@ -17,9 +19,41 @@ export default function PipelinePage() {
   const [stages, setStages] = useState<number[]>(defaultStages);
   const [options, setOptions] = useState("{}");
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<Record<string, unknown> | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [sourceDirs, setSourceDirs] = useState<string[]>([]);
+  const [showAddSource, setShowAddSource] = useState(false);
+  const [newSourceDir, setNewSourceDir] = useState("");
+  const [features, setFeatures] = useState<string[]>([]);
+  const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
+  const [dbProfiles, setDbProfiles] = useState<{ name: string; display_name: string }[]>([]);
   const { toast } = useToast();
+
+  // Load source directories from localStorage
+  useEffect(() => {
+    const dirs = localStorage.getItem(SOURCE_DIRS_KEY);
+    if (dirs) setSourceDirs(JSON.parse(dirs));
+  }, []);
+
+  // Fetch available features from backend
+  useEffect(() => {
+    fetch("/api/v1/pipeline/features")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) setFeatures(data);
+        else if (Array.isArray(data.features)) setFeatures(data.features);
+      })
+      .catch(() => setFeatures([]));
+  }, []);
+
+  // Fetch DB profiles from backend
+  useEffect(() => {
+    getDbProfiles()
+      .then((profiles) => {
+        if (Array.isArray(profiles)) setDbProfiles(profiles);
+      })
+      .catch(() => setDbProfiles([]));
+  }, []);
 
   const handleStageToggle = (stage: number) => {
     setStages((prev) =>
@@ -27,15 +61,60 @@ export default function PipelinePage() {
     );
   };
 
+  const handleAddSourceDir = () => {
+    if (!newSourceDir.trim()) return;
+    if (sourceDirs.includes(newSourceDir.trim())) {
+      toast({ title: "Already exists", description: "This source directory is already saved." });
+      return;
+    }
+    const updated = [...sourceDirs, newSourceDir.trim()];
+    setSourceDirs(updated);
+    localStorage.setItem(SOURCE_DIRS_KEY, JSON.stringify(updated));
+    setNewSourceDir("");
+    setShowAddSource(false);
+    setSrcProfile(newSourceDir.trim());
+    toast({ title: "Source directory added", description: newSourceDir.trim() });
+  };
+
+  const handleRemoveSourceDir = (dir: string) => {
+    const updated = sourceDirs.filter((d) => d !== dir);
+    setSourceDirs(updated);
+    localStorage.setItem(SOURCE_DIRS_KEY, JSON.stringify(updated));
+    if (srcProfile === dir) setSrcProfile("");
+  };
+
+  const handleFeatureToggle = (feature: string) => {
+    setSelectedFeatures((prev) =>
+      prev.includes(feature) ? prev.filter((f) => f !== feature) : [...prev, feature]
+    );
+  };
+
+  const validate = () => {
+    if (!srcProfile) return "Source directory is required.";
+    if (!outputDirectory) return "Output directory is required.";
+    if (!stages.length) return "At least one stage must be selected.";
+    try {
+      if (options) JSON.parse(options);
+    } catch {
+      return "Options must be valid JSON.";
+    }
+    return null;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
     setError(null);
     setResult(null);
+    const validationError = validate();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+    setLoading(true);
     let parsedOptions = {};
     try {
       parsedOptions = options ? JSON.parse(options) : {};
-    } catch (e) {
+    } catch {
       setError("Options must be valid JSON");
       setLoading(false);
       return;
@@ -48,13 +127,14 @@ export default function PipelinePage() {
         output_directory: outputDirectory,
         run_mode: runMode,
         options: parsedOptions,
+        enabled_features: selectedFeatures.length ? selectedFeatures : undefined,
       };
       const res = await triggerPipeline(config);
-      setResult(res);
+      setResult(res as Record<string, unknown>);
       toast({ title: "Pipeline started", description: "Pipeline run triggered." });
-    } catch (e: any) {
-      setError(e?.message || JSON.stringify(e));
-      toast({ title: "Pipeline error", description: e?.message || JSON.stringify(e), variant: "destructive" });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : JSON.stringify(e));
+      toast({ title: "Pipeline error", description: e instanceof Error ? e.message : JSON.stringify(e), variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -80,23 +160,83 @@ export default function PipelinePage() {
               </select>
             </div>
             <div>
-              <label className="block font-medium mb-1">Source Profile</label>
-              <Input
-                value={srcProfile}
-                onChange={(e) => setSrcProfile(e.target.value)}
-                placeholder="e.g. default, test, ..."
-              />
+              <label className="block font-medium mb-1 flex items-center justify-between">
+                Source Directory
+                <button type="button" className="text-xs underline ml-2" onClick={() => setShowAddSource((v) => !v)}>
+                  {showAddSource ? "Cancel" : "Add New"}
+                </button>
+              </label>
+              {showAddSource ? (
+                <div className="flex gap-2 mt-1">
+                  <Input
+                    value={newSourceDir}
+                    onChange={(e) => setNewSourceDir(e.target.value)}
+                    placeholder="/path/to/data"
+                  />
+                  <Button type="button" onClick={handleAddSourceDir}>
+                    Save
+                  </Button>
+                </div>
+              ) : (
+                <div className="flex flex-col gap-2">
+                  <select
+                    className="w-full p-2 rounded border"
+                    value={srcProfile}
+                    onChange={(e) => setSrcProfile(e.target.value)}
+                  >
+                    {sourceDirs.map((dir, idx) => (
+                      <option key={dir} value={dir}>
+                        [{idx + 1}] {dir}
+                      </option>
+                    ))}
+                    <option value="__custom__">[0] Enter custom path</option>
+                  </select>
+                  {srcProfile && srcProfile !== "__custom__" && (
+                    <Button
+                      type="button"
+                      size="sm"
+                      variant="destructive"
+                      className="w-fit"
+                      onClick={() => handleRemoveSourceDir(srcProfile)}
+                    >
+                      Remove Selected
+                    </Button>
+                  )}
+                  {srcProfile === "__custom__" && !showAddSource && (
+                    <div className="flex gap-2 mt-1">
+                      <Input
+                        value={newSourceDir}
+                        onChange={(e) => setNewSourceDir(e.target.value)}
+                        placeholder="/path/to/data"
+                      />
+                      <Button type="button" onClick={handleAddSourceDir}>
+                        Save
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
             <div>
               <label className="block font-medium mb-1">DB Profile</label>
-              <Input
+              <select
+                className="w-full p-2 rounded border"
                 value={dbProfile}
                 onChange={(e) => setDbProfile(e.target.value)}
-                placeholder="e.g. supabase, local, ..."
-              />
+              >
+                <option value="">Select DB Profile</option>
+                {dbProfiles.map((profile) => (
+                  <option key={profile.name} value={profile.name}>
+                    {profile.display_name}
+                  </option>
+                ))}
+              </select>
             </div>
             <div>
-              <label className="block font-medium mb-1">Output Directory</label>
+              <label className="block font-medium mb-1 flex items-center justify-between">
+                Output Directory
+                <span className="text-xs text-gray-500 ml-2">Default: assets</span>
+              </label>
               <Input
                 value={outputDirectory}
                 onChange={(e) => setOutputDirectory(e.target.value)}
@@ -119,24 +259,45 @@ export default function PipelinePage() {
               </div>
             </div>
             <div>
+              <label className="block font-medium mb-1">Features</label>
+              <div className="flex gap-2 flex-wrap">
+                {features.map((feature) => (
+                  <label key={feature} className="flex items-center gap-1">
+                    <input
+                      type="checkbox"
+                      checked={selectedFeatures.includes(feature)}
+                      onChange={() => handleFeatureToggle(feature)}
+                    />
+                    {feature}
+                  </label>
+                ))}
+              </div>
+            </div>
+            <div>
               <label className="block font-medium mb-1">Options (JSON)</label>
               <Textarea
                 value={options}
                 onChange={(e) => setOptions(e.target.value)}
-                placeholder="{\n  \"key\": \"value\"\n}"
+                placeholder={'{\n  "key": "value"\n}'}
                 rows={4}
               />
             </div>
-            <Button type="submit" disabled={loading} className="w-full">
-              {loading ? "Running..." : "Run Pipeline"}
-            </Button>
+            {error && <div className="text-red-600">{error}</div>}
+            {result && (
+              <div className="bg-green-100 text-green-800 p-2 rounded text-sm whitespace-pre-wrap mt-2">
+                {JSON.stringify(result, null, 2)}
+              </div>
+            )}
+            <div className="flex gap-2">
+              <Button type="submit" disabled={loading}>
+                {loading ? "Running..." : "Run Pipeline"}
+              </Button>
+              {/* Advanced: Validate config button (calls backend endpoint if implemented) */}
+              {/* <Button type="button" variant="outline" onClick={handleValidateConfig} disabled={loading}>
+                Validate Config
+              </Button> */}
+            </div>
           </form>
-          {error && <div className="text-red-500 mt-4">{error}</div>}
-          {result && (
-            <pre className="bg-gray-100 p-2 rounded mt-4 text-xs overflow-x-auto">
-              {JSON.stringify(result, null, 2)}
-            </pre>
-          )}
         </CardContent>
       </Card>
     </div>

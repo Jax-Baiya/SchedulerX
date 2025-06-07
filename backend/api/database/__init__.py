@@ -8,13 +8,11 @@ __all__ = [
     'Base',
     'DatabaseManager',
     'media',
-    'upload',
-    'SessionLocal'
+    'upload'
 ]
 
-db_instance = Database(settings.DATABASE_URL)
-db_instance.init_db()
-SessionLocal = db_instance.SessionLocal
+# Remove all eager DB connection/init at import time.
+# Only provide lazy init functions. Do not import or create SessionLocal here.
 
 def init_database(database_url: str) -> Database:
     db = Database(database_url)

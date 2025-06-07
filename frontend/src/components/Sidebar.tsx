@@ -17,6 +17,8 @@ const navLinks = [
   { href: "/scheduler", label: "Scheduler", icon: "⏰" },
   { href: "/tasks", label: "Tasks", icon: "📝" },
   { href: "/admin", label: "Admin", icon: "🛠️" },
+  { href: "/pipeline", label: "Pipeline", icon: "🔄" },
+  { href: "/settings", label: "Settings", icon: "⚙️" },
 ];
 
 export default function Sidebar({ activePath, onLogout, closeDrawer }: SidebarProps) {

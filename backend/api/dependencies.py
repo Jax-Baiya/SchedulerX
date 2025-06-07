@@ -9,10 +9,16 @@ from .services.r2_uploader import R2UploadService
 from typing import Iterator
 
 # Database setup
-engine = create_engine(settings.DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+try:
+    engine = create_engine(settings.DATABASE_URL)
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+except Exception as e:
+    SessionLocal = None
+    logging.warning(f"SessionLocal not initialized: {e}")
 
 def get_db() -> Iterator[Session]:
+    if SessionLocal is None:
+        raise RuntimeError("SessionLocal is not initialized.")
     db = SessionLocal()
     try:
         yield db

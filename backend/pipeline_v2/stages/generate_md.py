@@ -24,10 +24,11 @@ from utils import (
 #     return encoded
 
 def append_file_content(filepath, output_file):
+    filename = os.path.basename(filepath)
     with open(output_file, "a", encoding="utf-8") as out:
         out.write(f"### {filename}\n")
         out.write(f"```\n")
-        with open(file_path, "r", encoding="utf-8", errors="ignore") as infile:
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as infile:
             out.write(infile.read())
         out.write(f"\n```\n\n")
 
@@ -57,7 +58,8 @@ def run():
     print_stage_header("Generate Encoded Markdown Summary")
 
     session = load_session()
-    # dst_root = session.get("dst_root", "assets")
+    # Always use dst_root from session/config if present
+    dst_root = session.get("dst_root", "assets")
     prepare_pipeline_paths(session)
     dst_root = session["dst_root"]
     appdata_dir = os.path.join(dst_root, ".appdata")

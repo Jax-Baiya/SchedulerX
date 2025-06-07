@@ -6,9 +6,9 @@ Manages database profiles and their configurations in a centralized way.
 from typing import Dict, List, Optional, Set
 from dataclasses import dataclass
 from pathlib import Path
-import os
 import re
 from dotenv import load_dotenv
+import os
 
 @dataclass
 class DBProfile:
@@ -27,8 +27,10 @@ class DBProfileManager:
 
     def _load_env(self):
         """Load environment variables from .env file"""
-        env_path = Path(__file__).resolve().parents[1] / ".env"
-        load_dotenv(env_path)
+        # Always load .env from project root
+        project_root = Path(__file__).resolve().parents[1]
+        dotenv_path = project_root / ".env"
+        load_dotenv(dotenv_path=dotenv_path, override=True)
 
     def _get_env_variables(self) -> Set[str]:
         """Get all environment variables from .env"""

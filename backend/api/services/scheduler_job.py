@@ -1,6 +1,6 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 from backend.api.services.scheduler_runner import run_scheduler
-from backend.api.database import SessionLocal
+from backend.api.dependencies import SessionLocal  # PATCH: import from dependencies, not database
 import logging
 
 logger = logging.getLogger(__name__)
