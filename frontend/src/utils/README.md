@@ -1,0 +1,1 @@
+// Stateless utility functions
